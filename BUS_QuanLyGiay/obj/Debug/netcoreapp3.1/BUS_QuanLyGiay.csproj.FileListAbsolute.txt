@@ -1,0 +1,14 @@
+C:\Users\Tuan\source\repos\QuanLyGiay\BUS_QuanLyGiay\bin\Debug\netcoreapp3.1\BUS_QuanLyGiay.deps.json
+C:\Users\Tuan\source\repos\QuanLyGiay\BUS_QuanLyGiay\bin\Debug\netcoreapp3.1\BUS_QuanLyGiay.dll
+C:\Users\Tuan\source\repos\QuanLyGiay\BUS_QuanLyGiay\bin\Debug\netcoreapp3.1\BUS_QuanLyGiay.pdb
+C:\Users\Tuan\source\repos\QuanLyGiay\BUS_QuanLyGiay\bin\Debug\netcoreapp3.1\DAL_QuanLyGiay.dll
+C:\Users\Tuan\source\repos\QuanLyGiay\BUS_QuanLyGiay\bin\Debug\netcoreapp3.1\DTO_QuayLyGiay.dll
+C:\Users\Tuan\source\repos\QuanLyGiay\BUS_QuanLyGiay\bin\Debug\netcoreapp3.1\DAL_QuanLyGiay.pdb
+C:\Users\Tuan\source\repos\QuanLyGiay\BUS_QuanLyGiay\bin\Debug\netcoreapp3.1\DTO_QuayLyGiay.pdb
+C:\Users\Tuan\source\repos\QuanLyGiay\BUS_QuanLyGiay\obj\Debug\netcoreapp3.1\BUS_QuanLyGiay.csprojAssemblyReference.cache
+C:\Users\Tuan\source\repos\QuanLyGiay\BUS_QuanLyGiay\obj\Debug\netcoreapp3.1\BUS_QuanLyGiay.AssemblyInfoInputs.cache
+C:\Users\Tuan\source\repos\QuanLyGiay\BUS_QuanLyGiay\obj\Debug\netcoreapp3.1\BUS_QuanLyGiay.AssemblyInfo.cs
+C:\Users\Tuan\source\repos\QuanLyGiay\BUS_QuanLyGiay\obj\Debug\netcoreapp3.1\BUS_QuanLyGiay.csproj.CoreCompileInputs.cache
+C:\Users\Tuan\source\repos\QuanLyGiay\BUS_QuanLyGiay\obj\Debug\netcoreapp3.1\BUS_QuanLyGiay.csproj.CopyComplete
+C:\Users\Tuan\source\repos\QuanLyGiay\BUS_QuanLyGiay\obj\Debug\netcoreapp3.1\BUS_QuanLyGiay.dll
+C:\Users\Tuan\source\repos\QuanLyGiay\BUS_QuanLyGiay\obj\Debug\netcoreapp3.1\BUS_QuanLyGiay.pdb

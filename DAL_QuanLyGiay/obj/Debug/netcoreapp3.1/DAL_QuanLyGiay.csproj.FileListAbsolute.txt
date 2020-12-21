@@ -1,0 +1,12 @@
+C:\Users\Tuan\source\repos\QuanLyGiay\DAL_QuanLyGiay\bin\Debug\netcoreapp3.1\DAL_QuanLyGiay.deps.json
+C:\Users\Tuan\source\repos\QuanLyGiay\DAL_QuanLyGiay\bin\Debug\netcoreapp3.1\DAL_QuanLyGiay.dll
+C:\Users\Tuan\source\repos\QuanLyGiay\DAL_QuanLyGiay\bin\Debug\netcoreapp3.1\DAL_QuanLyGiay.pdb
+C:\Users\Tuan\source\repos\QuanLyGiay\DAL_QuanLyGiay\bin\Debug\netcoreapp3.1\DTO_QuayLyGiay.dll
+C:\Users\Tuan\source\repos\QuanLyGiay\DAL_QuanLyGiay\bin\Debug\netcoreapp3.1\DTO_QuayLyGiay.pdb
+C:\Users\Tuan\source\repos\QuanLyGiay\DAL_QuanLyGiay\obj\Debug\netcoreapp3.1\DAL_QuanLyGiay.csprojAssemblyReference.cache
+C:\Users\Tuan\source\repos\QuanLyGiay\DAL_QuanLyGiay\obj\Debug\netcoreapp3.1\DAL_QuanLyGiay.AssemblyInfoInputs.cache
+C:\Users\Tuan\source\repos\QuanLyGiay\DAL_QuanLyGiay\obj\Debug\netcoreapp3.1\DAL_QuanLyGiay.AssemblyInfo.cs
+C:\Users\Tuan\source\repos\QuanLyGiay\DAL_QuanLyGiay\obj\Debug\netcoreapp3.1\DAL_QuanLyGiay.csproj.CoreCompileInputs.cache
+C:\Users\Tuan\source\repos\QuanLyGiay\DAL_QuanLyGiay\obj\Debug\netcoreapp3.1\DAL_QuanLyGiay.csproj.CopyComplete
+C:\Users\Tuan\source\repos\QuanLyGiay\DAL_QuanLyGiay\obj\Debug\netcoreapp3.1\DAL_QuanLyGiay.dll
+C:\Users\Tuan\source\repos\QuanLyGiay\DAL_QuanLyGiay\obj\Debug\netcoreapp3.1\DAL_QuanLyGiay.pdb
