@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace GUI_QuanLyGiay
 {
-    public partial class login : Form
+    public partial class TrangChu : UserControl
     {
-        public login()
+        public TrangChu()
         {
             InitializeComponent();
         }

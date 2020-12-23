@@ -57,4 +57,679 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing.Primitives" name="System.Drawing.Primitives, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="dgvDanhSach.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>23, 12</value>
+  </data>
+  <data name="dgvDanhSach.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>618, 207</value>
+  </data>
+  <assembly alias="System.Private.CoreLib" name="System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e" />
+  <data name="dgvDanhSach.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dgvDanhSach.Name" xml:space="preserve">
+    <value>dgvDanhSach</value>
+  </data>
+  <data name="&gt;&gt;dgvDanhSach.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvDanhSach.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dgvDanhSach.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="txbMa.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>90, 249</value>
+  </data>
+  <data name="txbMa.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>137, 23</value>
+  </data>
+  <data name="txbMa.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txbMa.Name" xml:space="preserve">
+    <value>txbMa</value>
+  </data>
+  <data name="&gt;&gt;txbMa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txbMa.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txbMa.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="txbTen.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>90, 307</value>
+  </data>
+  <data name="txbTen.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>137, 23</value>
+  </data>
+  <data name="txbTen.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txbTen.Name" xml:space="preserve">
+    <value>txbTen</value>
+  </data>
+  <data name="&gt;&gt;txbTen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txbTen.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txbTen.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="txbMota.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>90, 371</value>
+  </data>
+  <data name="txbMota.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>137, 23</value>
+  </data>
+  <data name="txbMota.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txbMota.Name" xml:space="preserve">
+    <value>txbMota</value>
+  </data>
+  <data name="&gt;&gt;txbMota.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txbMota.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txbMota.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="txbGia.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>90, 400</value>
+  </data>
+  <data name="txbGia.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>137, 23</value>
+  </data>
+  <data name="txbGia.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txbGia.Name" xml:space="preserve">
+    <value>txbGia</value>
+  </data>
+  <data name="&gt;&gt;txbGia.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txbGia.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txbGia.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>35, 252</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>49, 15</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>2</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Mã giày</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>35, 281</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>46, 15</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>2</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Mã loại</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>35, 310</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>27, 15</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>2</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Tên</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>35, 374</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>38, 15</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>2</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Mô tả</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>35, 403</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>24, 15</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>2</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Giá</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="btnThem.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>90, 430</value>
+  </data>
+  <data name="btnThem.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>137, 23</value>
+  </data>
+  <data name="btnThem.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>3</value>
+  </data>
+  <data name="btnThem.Text" xml:space="preserve">
+    <value>Thêm</value>
+  </data>
+  <data name="&gt;&gt;btnThem.Name" xml:space="preserve">
+    <value>btnThem</value>
+  </data>
+  <data name="&gt;&gt;btnThem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnThem.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnThem.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="btnSua.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>248, 400</value>
+  </data>
+  <data name="btnSua.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>137, 23</value>
+  </data>
+  <data name="btnSua.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>4</value>
+  </data>
+  <data name="btnSua.Text" xml:space="preserve">
+    <value>Sửa</value>
+  </data>
+  <data name="&gt;&gt;btnSua.Name" xml:space="preserve">
+    <value>btnSua</value>
+  </data>
+  <data name="&gt;&gt;btnSua.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSua.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnSua.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="btnXoa.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>248, 430</value>
+  </data>
+  <data name="btnXoa.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>137, 23</value>
+  </data>
+  <data name="btnXoa.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>4</value>
+  </data>
+  <data name="btnXoa.Text" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="&gt;&gt;btnXoa.Name" xml:space="preserve">
+    <value>btnXoa</value>
+  </data>
+  <data name="&gt;&gt;btnXoa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnXoa.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnXoa.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="cbbMaLoai.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>90, 278</value>
+  </data>
+  <data name="cbbMaLoai.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>137, 23</value>
+  </data>
+  <data name="cbbMaLoai.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;cbbMaLoai.Name" xml:space="preserve">
+    <value>cbbMaLoai</value>
+  </data>
+  <data name="&gt;&gt;cbbMaLoai.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbbMaLoai.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cbbMaLoai.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="btnThemMaLoai.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>248, 278</value>
+  </data>
+  <data name="btnThemMaLoai.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>137, 23</value>
+  </data>
+  <data name="btnThemMaLoai.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>4</value>
+  </data>
+  <data name="btnThemMaLoai.Text" xml:space="preserve">
+    <value>Thêm Mã Loại</value>
+  </data>
+  <data name="&gt;&gt;btnThemMaLoai.Name" xml:space="preserve">
+    <value>btnThemMaLoai</value>
+  </data>
+  <data name="&gt;&gt;btnThemMaLoai.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnThemMaLoai.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnThemMaLoai.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="label6.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>35, 340</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>52, 15</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>6</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Giới tính</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="cbbGioiTinhGiay.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>90, 340</value>
+  </data>
+  <data name="cbbGioiTinhGiay.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>137, 23</value>
+  </data>
+  <data name="cbbGioiTinhGiay.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;cbbGioiTinhGiay.Name" xml:space="preserve">
+    <value>cbbGioiTinhGiay</value>
+  </data>
+  <data name="&gt;&gt;cbbGioiTinhGiay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbbGioiTinhGiay.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cbbGioiTinhGiay.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btnThenGioiTInhGiay.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>248, 340</value>
+  </data>
+  <data name="btnThenGioiTInhGiay.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>137, 23</value>
+  </data>
+  <data name="btnThenGioiTInhGiay.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>4</value>
+  </data>
+  <data name="btnThenGioiTInhGiay.Text" xml:space="preserve">
+    <value>Thêm Giới Tính GIày</value>
+  </data>
+  <data name="&gt;&gt;btnThenGioiTInhGiay.Name" xml:space="preserve">
+    <value>btnThenGioiTInhGiay</value>
+  </data>
+  <data name="&gt;&gt;btnThenGioiTInhGiay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnThenGioiTInhGiay.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnThenGioiTInhGiay.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>529, 235</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>75, 23</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>8</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>btnBrowser</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="ptbImg.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>436, 235</value>
+  </data>
+  <data name="ptbImg.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>87, 66</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ptbImg.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="ptbImg.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;ptbImg.Name" xml:space="preserve">
+    <value>ptbImg</value>
+  </data>
+  <data name="&gt;&gt;ptbImg.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ptbImg.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ptbImg.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ptbImgLoad.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>529, 264</value>
+  </data>
+  <data name="ptbImgLoad.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>87, 66</value>
+  </data>
+  <data name="ptbImgLoad.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="ptbImgLoad.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;ptbImgLoad.Name" xml:space="preserve">
+    <value>ptbImgLoad</value>
+  </data>
+  <data name="&gt;&gt;ptbImgLoad.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ptbImgLoad.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ptbImgLoad.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnGetImg.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>448, 307</value>
+  </data>
+  <data name="btnGetImg.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>75, 23</value>
+  </data>
+  <data name="btnGetImg.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>8</value>
+  </data>
+  <data name="btnGetImg.Text" xml:space="preserve">
+    <value>Get Image</value>
+  </data>
+  <data name="&gt;&gt;btnGetImg.Name" xml:space="preserve">
+    <value>btnGetImg</value>
+  </data>
+  <data name="&gt;&gt;btnGetImg.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnGetImg.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnGetImg.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="ltvGiay.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>23, 474</value>
+  </data>
+  <data name="ltvGiay.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>618, 139</value>
+  </data>
+  <data name="ltvGiay.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;ltvGiay.Name" xml:space="preserve">
+    <value>ltvGiay</value>
+  </data>
+  <data name="&gt;&gt;ltvGiay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ltvGiay.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ltvGiay.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="colHinhAnh.Text" xml:space="preserve">
+    <value>Hình Ảnh</value>
+  </data>
+  <data name="colHinhAnh.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="colHinhAnh.Width" type="System.Int32, System.Private.CoreLib">
+    <value>120</value>
+  </data>
+  <data name="colStt.Text" xml:space="preserve">
+    <value>STT</value>
+  </data>
+  <data name="colMaGiay.Text" xml:space="preserve">
+    <value>Mã Giày</value>
+  </data>
+  <data name="colMaGiay.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="calMaLoaiGiay.Text" xml:space="preserve">
+    <value>Mã Loại Giày</value>
+  </data>
+  <data name="calMaLoaiGiay.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="calMaLoaiGiay.Width" type="System.Int32, System.Private.CoreLib">
+    <value>100</value>
+  </data>
+  <data name="colTen.Text" xml:space="preserve">
+    <value>Tên GIày</value>
+  </data>
+  <data name="colTen.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="colGioiTinh.Text" xml:space="preserve">
+    <value>GIới Tính</value>
+  </data>
+  <data name="colGioiTinh.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="colMoTa.Text" xml:space="preserve">
+    <value>Mô Tả</value>
+  </data>
+  <data name="colMoTa.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="colMoTa.Width" type="System.Int32, System.Private.CoreLib">
+    <value>100</value>
+  </data>
+  <data name="colGia.Text" xml:space="preserve">
+    <value>Giá</value>
+  </data>
+  <data name="colGia.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="colGia.Width" type="System.Int32, System.Private.CoreLib">
+    <value>80</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing.Primitives">
+    <value>7, 15</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>681, 688</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Danh Sách Giày</value>
+  </data>
+  <data name="&gt;&gt;colHinhAnh.Name" xml:space="preserve">
+    <value>colHinhAnh</value>
+  </data>
+  <data name="&gt;&gt;colHinhAnh.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;colStt.Name" xml:space="preserve">
+    <value>colStt</value>
+  </data>
+  <data name="&gt;&gt;colStt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;colMaGiay.Name" xml:space="preserve">
+    <value>colMaGiay</value>
+  </data>
+  <data name="&gt;&gt;colMaGiay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;calMaLoaiGiay.Name" xml:space="preserve">
+    <value>calMaLoaiGiay</value>
+  </data>
+  <data name="&gt;&gt;calMaLoaiGiay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;colTen.Name" xml:space="preserve">
+    <value>colTen</value>
+  </data>
+  <data name="&gt;&gt;colTen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;colGioiTinh.Name" xml:space="preserve">
+    <value>colGioiTinh</value>
+  </data>
+  <data name="&gt;&gt;colGioiTinh.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;colMoTa.Name" xml:space="preserve">
+    <value>colMoTa</value>
+  </data>
+  <data name="&gt;&gt;colMoTa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;colGia.Name" xml:space="preserve">
+    <value>colGia</value>
+  </data>
+  <data name="&gt;&gt;colGia.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>DanhSachGiay</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

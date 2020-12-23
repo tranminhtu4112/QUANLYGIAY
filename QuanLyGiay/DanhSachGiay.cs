@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DTO_QuayLyGiay;
+using System.IO;
+using System.Drawing.Imaging;
 
 namespace QuanLyGiay
 {
@@ -23,10 +25,41 @@ namespace QuanLyGiay
             loadDataGiay();
             loadDataMaLoai();
             loadDataGioiTinh();
+            loadDataListViewGiay();
         }
         public void loadDataGiay()
         {
-            dgvDanhSach.DataSource = busGiay.getAllGiay();
+            dgvDanhSach.DataSource = busGiay.getAllInfoGiay();
+        }
+        public void loadDataListViewGiay()
+        {
+            ltvGiay.FullRowSelect = true;
+            ltvGiay.View = View.Details;
+            ImageList imgs = new ImageList();
+            imgs.ImageSize = new Size(50, 50);
+            foreach (DataRow row in busGiay.getAllGiay().Rows)
+            {
+                    MemoryStream memoryStream = new MemoryStream((Byte[])row[6]);
+                    Image img = Image.FromStream(memoryStream);
+                    imgs.Images.Add(img);
+            }
+            int stt = 0;
+            ltvGiay.SmallImageList = imgs;
+            foreach (DataRow row in busGiay.getAllGiay().Rows)
+            {
+                stt++;
+                ListViewItem item = new ListViewItem("");
+                item.SubItems.Add(stt.ToString());
+                item.SubItems.Add(row[1].ToString());
+                item.SubItems.Add(row[2].ToString());
+                item.SubItems.Add(row[3].ToString());
+                item.SubItems.Add(row[4].ToString());
+                item.SubItems.Add(row[5].ToString());
+                item.SubItems.Add(row[7].ToString());
+
+                item.ImageIndex = stt - 1;
+                ltvGiay.Items.Add(item);
+            }
         }
         public void loadDataMaLoai()
         {
@@ -34,6 +67,7 @@ namespace QuanLyGiay
             {
                 cbbMaLoai.Items.Add(row[1].ToString());
             }
+            cbbMaLoai.SelectedIndex = 0;
         }
         public void loadDataGioiTinh()
         {
@@ -58,6 +92,8 @@ namespace QuanLyGiay
                 return "Giới tính giày không được trống!";
             if (txbMota.Text == "")
                 return "Mô tả không được trống!";
+            if (ptbImg.Image == null)
+                return "Ảnh không được trống!";
             if (txbGia.Text == "")
                 return "Giá không được trống!";
             String ma = txbMa.Text.ToString();
@@ -65,7 +101,11 @@ namespace QuanLyGiay
             String ten = txbTen.Text.ToString();
             int gioiTinh = int.Parse(((KeyValuePair<string, string>)cbbGioiTinhGiay.SelectedItem).Key);
             String moTa = txbMota.Text.ToString();
-            byte[] hinhAnh = null;
+
+            MemoryStream stream = new MemoryStream();
+            ptbImg.Image.Save(stream, ImageFormat.Png);
+            byte[] hinhAnh = stream.ToArray();
+            
             float gia = float.Parse(txbGia.Text);
             return new DTO_Giay(ma, maLoai, ten, gioiTinh, moTa, hinhAnh, gia);
         }
@@ -73,23 +113,47 @@ namespace QuanLyGiay
         {
             try
             {
-                if (checkAndReturnGiay() is String)
-                    MessageBox.Show(checkAndReturnGiay().ToString());
+                Object obj = checkAndReturnGiay();
+                if (obj is String)
+                    MessageBox.Show(obj.ToString());
                 else
-                    busGiay.AddGiay((DTO_Giay)checkAndReturnGiay());
+                {
+                    busGiay.AddGiay((DTO_Giay)obj);
+                    loadDataGiay();
+                    loadDataListViewGiay();
+                }
             }
             catch (Exception ex)
             {
                 ex.ToString();
                 MessageBox.Show("Lỗi Phầm mềm!");
             }
-            finally
-            {
-                loadDataGiay();
-            }
         }
         private void btnXoa_Click(object sender, EventArgs e)
         {
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            try
+            {
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    string fileName;
+                    fileName = openFileDialog.FileName;
+                    Image m = Image.FromFile(fileName); /// bitmap(fileName)
+                    ptbImg.Image = m;
+                }
+            }
+            catch(Exception ex)
+            {
+                ex.ToString();
+                MessageBox.Show("FIle không đúng!");
+            }
+        }
+        private void btnGetImg_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

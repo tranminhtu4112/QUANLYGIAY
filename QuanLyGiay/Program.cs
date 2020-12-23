@@ -1,4 +1,4 @@
-using GUI_QuanLyGiay;
+using BUS_QuanLyGiay;
 using System;
 using System.Collections.Generic;
 using System.Linq;

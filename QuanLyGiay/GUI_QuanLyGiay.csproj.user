@@ -4,8 +4,14 @@
     <Compile Update="DanhSachGiay.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="login.cs">
+    <Compile Update="FormMain.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SanPham.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="TrangChu.cs">
+      <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>
 </Project>

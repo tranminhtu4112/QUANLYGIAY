@@ -1,14 +1,14 @@
 ﻿
 namespace GUI_QuanLyGiay
 {
-    partial class login
+    partial class SanPham
     {
-        /// <summary>
+        /// <summary> 
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
+        /// <summary> 
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -21,10 +21,10 @@ namespace GUI_QuanLyGiay
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+        #region Component Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
@@ -34,21 +34,21 @@ namespace GUI_QuanLyGiay
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(137, 78);
+            this.button1.Font = new System.Drawing.Font("Showcard Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button1.Location = new System.Drawing.Point(30, 28);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(373, 101);
             this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
+            this.button1.Text = "Sản Phẩm";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // login
+            // SanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
-            this.Name = "login";
-            this.Text = "login";
+            this.Name = "SanPham";
+            this.Size = new System.Drawing.Size(745, 458);
             this.ResumeLayout(false);
 
         }

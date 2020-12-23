@@ -26,4 +26,7 @@ C:\Users\Tuan\source\repos\QuanLyGiay\QuanLyGiay\bin\Debug\netcoreapp3.1\runtime
 C:\Users\Tuan\source\repos\QuanLyGiay\QuanLyGiay\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
 C:\Users\Tuan\source\repos\QuanLyGiay\QuanLyGiay\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\Tuan\source\repos\QuanLyGiay\QuanLyGiay\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\Tuan\source\repos\QuanLyGiay\QuanLyGiay\obj\Debug\netcoreapp3.1\GUI_QuanLyGiay.login.resources
+C:\Users\Tuan\source\repos\QuanLyGiay\QuanLyGiay\obj\Debug\netcoreapp3.1\QuanLyGiay.FormMain.resources
+C:\Users\Tuan\source\repos\QuanLyGiay\QuanLyGiay\obj\Debug\netcoreapp3.1\GUI_QuanLyGiay.TrangChu.resources
+C:\Users\Tuan\source\repos\QuanLyGiay\QuanLyGiay\obj\Debug\netcoreapp3.1\GUI_QuanLyGiay.SanPham.resources
+C:\Users\Tuan\source\repos\QuanLyGiay\QuanLyGiay\obj\Debug\netcoreapp3.1\GUI_QuanLyGiay.Properties.Resources.resources
