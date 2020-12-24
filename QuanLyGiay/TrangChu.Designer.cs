@@ -73,7 +73,7 @@ namespace GUI_QuanLyGiay
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "TrangChu";
-            this.Size = new System.Drawing.Size(742, 385);
+            this.Size = new System.Drawing.Size(953, 603);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
 

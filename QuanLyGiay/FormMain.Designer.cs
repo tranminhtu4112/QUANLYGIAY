@@ -47,12 +47,14 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
-            this.trangChu1 = new GUI_QuanLyGiay.TrangChu();
-            this.sanPham1 = new GUI_QuanLyGiay.SanPham();
             this.button8 = new System.Windows.Forms.Button();
+            this.pnlMain = new System.Windows.Forms.Panel();
+            this.trangChu1 = new GUI_QuanLyGiay.TrangChu();
+            this.qlSanPham1 = new GUI_QuanLyGiay.QLSanPham();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
+            this.pnlMain.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -152,7 +154,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(230, 62);
             this.button1.TabIndex = 4;
-            this.button1.Text = "       Home";
+            this.button1.Text = "       Trang chủ";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -226,7 +228,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(230, 62);
             this.button2.TabIndex = 4;
-            this.button2.Text = "       Eat-In";
+            this.button2.Text = "       Quản lý sản phẩm";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -242,8 +244,11 @@
             this.panel2.Location = new System.Drawing.Point(244, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(953, 75);
+            this.panel2.Size = new System.Drawing.Size(953, 64);
             this.panel2.TabIndex = 1;
+            this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
+            this.panel2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseMove);
+            this.panel2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseUp);
             // 
             // label4
             // 
@@ -251,27 +256,28 @@
             this.label4.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.Transparent;
             this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label4.Location = new System.Drawing.Point(154, 9);
+            this.label4.Location = new System.Drawing.Point(168, 9);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(574, 38);
+            this.label4.Size = new System.Drawing.Size(506, 38);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Hệ Thống Quản Lý Bán Giày Sneaker";
+            this.label4.Text = "Hệ Thống Quản Lý Giày Sneaker";
             // 
             // button13
             // 
-            this.button13.BackColor = System.Drawing.Color.White;
+            this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
             this.button13.FlatAppearance.BorderSize = 0;
+            this.button13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button13.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button13.ForeColor = System.Drawing.Color.White;
             this.button13.Image = ((System.Drawing.Image)(resources.GetObject("button13.Image")));
             this.button13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button13.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button13.Location = new System.Drawing.Point(916, 0);
+            this.button13.Location = new System.Drawing.Point(919, 0);
             this.button13.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(37, 40);
+            this.button13.Size = new System.Drawing.Size(36, 31);
             this.button13.TabIndex = 4;
             this.button13.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button13.UseVisualStyleBackColor = false;
@@ -279,36 +285,39 @@
             // 
             // button11
             // 
-            this.button11.BackColor = System.Drawing.Color.White;
+            this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
             this.button11.FlatAppearance.BorderSize = 0;
+            this.button11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button11.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button11.ForeColor = System.Drawing.Color.White;
+            this.button11.ForeColor = System.Drawing.Color.Transparent;
             this.button11.Image = ((System.Drawing.Image)(resources.GetObject("button11.Image")));
             this.button11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button11.Location = new System.Drawing.Point(845, 0);
-            this.button11.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.button11.Location = new System.Drawing.Point(842, 0);
+            this.button11.Margin = new System.Windows.Forms.Padding(0);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(37, 40);
+            this.button11.Size = new System.Drawing.Size(36, 31);
             this.button11.TabIndex = 4;
             this.button11.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click_1);
             // 
             // button12
             // 
-            this.button12.BackColor = System.Drawing.Color.White;
+            this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
             this.button12.FlatAppearance.BorderSize = 0;
+            this.button12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button12.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button12.ForeColor = System.Drawing.Color.White;
             this.button12.Image = ((System.Drawing.Image)(resources.GetObject("button12.Image")));
             this.button12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button12.Location = new System.Drawing.Point(881, 0);
+            this.button12.Location = new System.Drawing.Point(880, 0);
             this.button12.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(37, 40);
+            this.button12.Size = new System.Drawing.Size(38, 31);
             this.button12.TabIndex = 4;
             this.button12.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button12.UseVisualStyleBackColor = false;
@@ -317,20 +326,6 @@
             // 
             this.fileSystemWatcher1.EnableRaisingEvents = true;
             this.fileSystemWatcher1.SynchronizingObject = this;
-            // 
-            // trangChu1
-            // 
-            this.trangChu1.Location = new System.Drawing.Point(244, 81);
-            this.trangChu1.Name = "trangChu1";
-            this.trangChu1.Size = new System.Drawing.Size(742, 385);
-            this.trangChu1.TabIndex = 5;
-            // 
-            // sanPham1
-            // 
-            this.sanPham1.Location = new System.Drawing.Point(244, 81);
-            this.sanPham1.Name = "sanPham1";
-            this.sanPham1.Size = new System.Drawing.Size(745, 458);
-            this.sanPham1.TabIndex = 6;
             // 
             // button8
             // 
@@ -351,14 +346,35 @@
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button1_Click);
             // 
+            // pnlMain
+            // 
+            this.pnlMain.Controls.Add(this.trangChu1);
+            this.pnlMain.Controls.Add(this.qlSanPham1);
+            this.pnlMain.Location = new System.Drawing.Point(244, 70);
+            this.pnlMain.Name = "pnlMain";
+            this.pnlMain.Size = new System.Drawing.Size(953, 603);
+            this.pnlMain.TabIndex = 5;
+            // 
+            // trangChu1
+            // 
+            this.trangChu1.Location = new System.Drawing.Point(0, 0);
+            this.trangChu1.Name = "trangChu1";
+            this.trangChu1.Size = new System.Drawing.Size(953, 603);
+            this.trangChu1.TabIndex = 1;
+            // 
+            // qlSanPham1
+            // 
+            this.qlSanPham1.Location = new System.Drawing.Point(0, 0);
+            this.qlSanPham1.Name = "qlSanPham1";
+            this.qlSanPham1.Size = new System.Drawing.Size(953, 603);
+            this.qlSanPham1.TabIndex = 0;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1197, 673);
-            this.Controls.Add(this.sanPham1);
-            this.Controls.Add(this.trangChu1);
+            this.Controls.Add(this.pnlMain);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button8);
@@ -367,10 +383,12 @@
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.FormMain_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
+            this.pnlMain.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -395,9 +413,10 @@
         private System.IO.FileSystemWatcher fileSystemWatcher1;
         private System.ComponentModel.BackgroundWorker backgroundWorker2;
         public System.Windows.Forms.Button button1;
-        private GUI_QuanLyGiay.TrangChu trangChu1;
-        private GUI_QuanLyGiay.SanPham sanPham1;
         public System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Panel pnlMain;
+        private GUI_QuanLyGiay.TrangChu trangChu1;
+        private GUI_QuanLyGiay.QLSanPham qlSanPham1;
     }
 }
 

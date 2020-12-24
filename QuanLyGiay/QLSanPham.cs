@@ -8,11 +8,17 @@ using System.Windows.Forms;
 
 namespace GUI_QuanLyGiay
 {
-    public partial class SanPham : UserControl
+    public partial class QLSanPham : UserControl
     {
-        public SanPham()
+       
+        public QLSanPham()
         {
             InitializeComponent();
+        }
+
+        private void QLSanPham_Load(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
         }
     }
 }

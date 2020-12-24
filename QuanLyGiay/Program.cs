@@ -18,7 +18,7 @@ namespace QuanLyGiay
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DanhSachGiay());
+            Application.Run(new FormMain());
         }
     }
 }
