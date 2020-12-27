@@ -23,10 +23,6 @@ namespace QuanLyGiay
             SidePanel.Top = button1.Top;
             trangChu1.BringToFront();
         }
-        private void FormMain_Load(object sender, EventArgs e)
-        {
-            this.Location = Screen.AllScreens[1].WorkingArea.Location;
-        }
         private void button1_Click(object sender, EventArgs e)
         {
             SidePanel.Height = button1.Height;
@@ -42,11 +38,6 @@ namespace QuanLyGiay
         private void button13_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-        private void button3_Click(object sender, EventArgs e)
-        {
-            SidePanel.Height = button3.Height;
-            SidePanel.Top = button3.Top;
         }
         private void button11_Click_1(object sender, EventArgs e)
         {
@@ -64,6 +55,14 @@ namespace QuanLyGiay
             movX = e.X;
             movY = e.Y;
         }
+
+        private void btnQLThuongHieu_Click(object sender, EventArgs e)
+        {
+            SidePanel.Height = btnQLThuongHieu.Height;
+            SidePanel.Top = btnQLThuongHieu.Top;
+            qlThuongHieu1.BringToFront();
+        }
+
         private void panel2_MouseMove(object sender, MouseEventArgs e)
         {
             if(mov == 1)

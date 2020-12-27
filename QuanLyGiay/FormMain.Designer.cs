@@ -36,7 +36,7 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnQLThuongHieu = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -51,6 +51,7 @@
             this.pnlMain = new System.Windows.Forms.Panel();
             this.trangChu1 = new GUI_QuanLyGiay.TrangChu();
             this.qlSanPham1 = new GUI_QuanLyGiay.QLSanPham();
+            this.qlThuongHieu1 = new GUI_QuanLyGiay.QLThuongHieu();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
@@ -66,7 +67,7 @@
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.btnQLThuongHieu);
             this.panel1.Controls.Add(this.button14);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -91,7 +92,6 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
             this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.button7.Location = new System.Drawing.Point(14, 442);
@@ -109,7 +109,6 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
             this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.button6.Location = new System.Drawing.Point(14, 380);
@@ -127,7 +126,6 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.button5.Location = new System.Drawing.Point(14, 317);
@@ -165,7 +163,6 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.button4.Location = new System.Drawing.Point(14, 255);
@@ -177,24 +174,23 @@
             this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnQLThuongHieu
             // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button3.Location = new System.Drawing.Point(14, 193);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(230, 62);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "       Collection";
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnQLThuongHieu.FlatAppearance.BorderSize = 0;
+            this.btnQLThuongHieu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQLThuongHieu.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnQLThuongHieu.ForeColor = System.Drawing.Color.White;
+            this.btnQLThuongHieu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnQLThuongHieu.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnQLThuongHieu.Location = new System.Drawing.Point(14, 193);
+            this.btnQLThuongHieu.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnQLThuongHieu.Name = "btnQLThuongHieu";
+            this.btnQLThuongHieu.Size = new System.Drawing.Size(230, 62);
+            this.btnQLThuongHieu.TabIndex = 4;
+            this.btnQLThuongHieu.Text = "       Quản lí thương hiệu";
+            this.btnQLThuongHieu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnQLThuongHieu.UseVisualStyleBackColor = true;
+            this.btnQLThuongHieu.Click += new System.EventHandler(this.btnQLThuongHieu_Click);
             // 
             // button14
             // 
@@ -333,7 +329,6 @@
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
             this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.button8.Location = new System.Drawing.Point(289, 231);
@@ -348,6 +343,7 @@
             // 
             // pnlMain
             // 
+            this.pnlMain.Controls.Add(this.qlThuongHieu1);
             this.pnlMain.Controls.Add(this.trangChu1);
             this.pnlMain.Controls.Add(this.qlSanPham1);
             this.pnlMain.Location = new System.Drawing.Point(244, 70);
@@ -369,6 +365,13 @@
             this.qlSanPham1.Size = new System.Drawing.Size(953, 603);
             this.qlSanPham1.TabIndex = 0;
             // 
+            // qlThuongHieu1
+            // 
+            this.qlThuongHieu1.Location = new System.Drawing.Point(0, 0);
+            this.qlThuongHieu1.Name = "qlThuongHieu1";
+            this.qlThuongHieu1.Size = new System.Drawing.Size(953, 603);
+            this.qlThuongHieu1.TabIndex = 2;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -383,7 +386,6 @@
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.FormMain_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -403,7 +405,7 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnQLThuongHieu;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button11;
@@ -417,6 +419,7 @@
         private System.Windows.Forms.Panel pnlMain;
         private GUI_QuanLyGiay.TrangChu trangChu1;
         private GUI_QuanLyGiay.QLSanPham qlSanPham1;
+        private GUI_QuanLyGiay.QLThuongHieu qlThuongHieu1;
     }
 }
 

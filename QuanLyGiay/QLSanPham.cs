@@ -20,5 +20,17 @@ namespace GUI_QuanLyGiay
         {
             textBox1.Text = "";
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            TBXoa tBXoa = new TBXoa();
+            tBXoa.ShowDialog();
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            TBThem tBThem = new TBThem();
+            tBThem.ShowDialog();
+        }
     }
 }
