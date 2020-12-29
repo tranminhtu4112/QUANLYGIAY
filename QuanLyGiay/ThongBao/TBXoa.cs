@@ -10,10 +10,12 @@ namespace GUI_QuanLyGiay
 {
     public partial class TBXoa : Form
     {
+        public bool isClickXoa { set; get; }
         int mov, movX, movY;
         public TBXoa()
         {
             InitializeComponent();
+            this.isClickXoa = false;
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -25,6 +27,13 @@ namespace GUI_QuanLyGiay
             movX = e.X;
             movY = e.Y;
         }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            this.isClickXoa = true;
+            this.Close();
+        }
+
         private void panel1_MouseUp_1(object sender, MouseEventArgs e)
         {
             mov = 0;

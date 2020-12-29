@@ -44,11 +44,11 @@ namespace GUI_QuanLyGiay
                 item.SubItems.Add(row[2].ToString());
                 item.SubItems.Add(row[3].ToString());
 
-                /*MemoryStream memoryStream = new MemoryStream((Byte[])row[4]);
+                MemoryStream memoryStream = new MemoryStream((Byte[])row[4]);
                 Image img = Image.FromStream(memoryStream);
                 imgList.Images.Add(img);
                 lvwThuongHieu.SmallImageList = imgList;
-                item.ImageIndex = stt - 1;*/
+                item.ImageIndex = stt - 1;
 
                 lvwThuongHieu.Items.Add(item);
             }
@@ -56,7 +56,7 @@ namespace GUI_QuanLyGiay
 
         private void btnLamMoi_Click(object sender, EventArgs e)
         {
-            
+            loadDatathuongHieu();
         }
 
         private void btnSua_Click(object sender, EventArgs e)
@@ -68,8 +68,13 @@ namespace GUI_QuanLyGiay
                 dtoThuongHieu.maThuongHieu = item.SubItems[2].Text;
                 dtoThuongHieu.tenThuongHieu = item.SubItems[3].Text;
                 dtoThuongHieu.moTa = item.SubItems[4].Text;
+
                 Tool_SuaThuongHieu toolSuaThuongHieu = new Tool_SuaThuongHieu(dtoThuongHieu);
                 toolSuaThuongHieu.ShowDialog();
+                if (toolSuaThuongHieu.isClickSua)
+                {
+                    loadDatathuongHieu();
+                }
             }
         }
 
@@ -77,6 +82,36 @@ namespace GUI_QuanLyGiay
         {
             Tool_ThemThuongHieu toolThemThuongHieu = new Tool_ThemThuongHieu();
             toolThemThuongHieu.ShowDialog();
+            if(toolThemThuongHieu.isClickThem)
+            {
+                loadDatathuongHieu();
+            }
+            
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            if (lvwThuongHieu.SelectedItems.Count > 0)
+            {
+                TBXoa tbXoa = new TBXoa();
+                tbXoa.ShowDialog();
+                if (tbXoa.isClickXoa)
+                {
+                    ListViewItem item = lvwThuongHieu.SelectedItems[0];
+                    if (busThuongHieu.deleteThuongHieu(item.SubItems[2].Text))
+                    {
+                        String thongBao = "Xóa thành công!";
+                        TBThemSuaXoa tBThemSuaXoa = new TBThemSuaXoa(thongBao);
+                        tBThemSuaXoa.ShowDialog();
+                        loadDatathuongHieu();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Lỗi phần mềm!");
+                    }
+                }
+
+            }
         }
     }
 }

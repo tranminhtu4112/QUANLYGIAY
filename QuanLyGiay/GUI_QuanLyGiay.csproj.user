@@ -16,7 +16,7 @@
     <Compile Update="ThuongHieu\QLThuongHieu.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="ThongBao\TBThem.cs">
+    <Compile Update="ThongBao\TBThemSuaXoa.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="ThongBao\TBXoa.cs">

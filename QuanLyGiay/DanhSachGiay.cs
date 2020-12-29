@@ -107,7 +107,7 @@ namespace QuanLyGiay
             byte[] hinhAnh = stream.ToArray();
             
             float gia = float.Parse(txbGia.Text);
-            return new DTO_Giay(ma, maLoai, ten, gioiTinh, moTa, hinhAnh, gia);
+            return null;
         }
         private void btnThem_Click(object sender, EventArgs e)
         {

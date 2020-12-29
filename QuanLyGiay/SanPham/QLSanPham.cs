@@ -29,7 +29,7 @@ namespace GUI_QuanLyGiay
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            TBThem tBThem = new TBThem();
+            TBThemSuaXoa tBThem = new TBThemSuaXoa();
             tBThem.ShowDialog();
         }
     }

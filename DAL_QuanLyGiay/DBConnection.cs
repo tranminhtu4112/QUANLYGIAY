@@ -7,7 +7,7 @@ namespace DAL_QuanLyGiay
 {
     public class DBConnection
     {
-        String SQLConnect = @"Data Source=VAIO\SQLEXPRESS;Initial Catalog=QUANLYGIAY;Integrated Security=True";
+        String SQLConnect = @"Data Source=VAIO\SQLEXPRESS;Initial Catalog=QUANLYGIAY_MAIN;Integrated Security=True";
     
         public SqlConnection getConnection()
         {

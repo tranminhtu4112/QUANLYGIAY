@@ -8,14 +8,18 @@ using System.Windows.Forms;
 
 namespace GUI_QuanLyGiay
 {
-    public partial class TBThem : Form
+    public partial class TBThemSuaXoa : Form
     {
         int mov, movX, movY;
-        public TBThem()
+        public TBThemSuaXoa()
         {
             InitializeComponent();
         }
-
+        public TBThemSuaXoa(String thongBao)
+        {
+            InitializeComponent();
+            lblThongBao.Text = thongBao;
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();

@@ -1,4 +1,5 @@
 ﻿using DAL_QuanLyGiay;
+using DTO_QuayLyGiay;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -12,6 +13,18 @@ namespace BUS_QuanLyGiay
         public DataTable getAllThuongHieu()
         {
             return dalThuongHieu.getAllThuongHieu();
+        }
+        public bool addThuongHieu(DTO_ThuongHieu dtoThuongHieu)
+        {
+            return dalThuongHieu.addThuongHieu(dtoThuongHieu);
+        }
+        public bool editThuongHieu(DTO_ThuongHieu dtoThuongHieu)
+        {
+            return dalThuongHieu.editThuongHieu(dtoThuongHieu);
+        }
+        public bool deleteThuongHieu(String maThuongHieu)
+        {
+            return dalThuongHieu.deleteThuongHieu(maThuongHieu);
         }
     }
 }

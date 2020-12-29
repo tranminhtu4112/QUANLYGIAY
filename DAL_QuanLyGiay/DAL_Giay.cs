@@ -22,7 +22,7 @@ namespace DAL_QuanLyGiay
                     + "WHERE GIAY.GIOITINHGIAY = GIOITINH.ID AND GIAY.MALOAI = LOAIGIAY.MALOAI";
             return new DAL_Common().getSelect(SQLSelectAll);
         }
-        public void AddGiay(DTO_Giay giay)
+        /*public void AddGiay(DTO_Giay giay)
         {
             String sqlInsert = "INSERT INTO GIAY (MA, MALOAI, TEN, GIOITINHGIAY, MOTA, HINHANH, GIA) " +
                                 "VALUES(@MA, @MALOAI, @TEN, @GIOITINHGIAY, @MOTA, @HINHANH, @GIA)";
@@ -37,6 +37,6 @@ namespace DAL_QuanLyGiay
             command.Parameters.AddWithValue("GIA", giay.gia);
             command.ExecuteNonQuery();
             conn.Close();
-        }
+        }*/
     }
 }

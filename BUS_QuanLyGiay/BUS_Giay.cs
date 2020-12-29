@@ -20,7 +20,8 @@ namespace BUS_QuanLyGiay
         }
         public void AddGiay(DTO_Giay giay)
         {
-            dallGiay.AddGiay(giay);
+            return;
+            //dallGiay.AddGiay(giay);
         }
 
 

@@ -6,27 +6,30 @@ namespace DTO_QuayLyGiay
 {
     public class DTO_Giay
     {
-        public int id { get; set; }
-        public String ma { get; set; }
-        public String maLoai { get; set; }
-        public String ten { get; set; }
-        public int gioiTinh { get; set; }
+        public String maGiay { get; set; }
+        public String TenGiay { get; set; }
+        public String maGioiTinh { get; set; }
+        public String maThuongHieu { get; set; }
         public String moTa { get; set; }
         public byte[] hinhAnh { get; set; }
+        public String maKhuyenMai { get; set; }
+        public int soLuong { get; set; }
         public float gia { get; set; }
         public DTO_Giay()
         {
 
         }
-        public DTO_Giay(String ma, String maLoai, String ten, int gioiTinh, 
-            String moTa, byte[] hinhAnh, float gia)
+        public DTO_Giay(String maGiay, String TenGiay, String maGioiTinh, String maThuongHieu, 
+                        String moTa, byte[] hinhAnh, String maKhuyenMai, int soLuong, float gia)
         {
-            this.ma = ma;
-            this.maLoai = maLoai;
-            this.ten = ten;
-            this.gioiTinh = gioiTinh;
+            this.maGiay = maGiay;
+            this.TenGiay = TenGiay;
+            this.maGioiTinh = maGioiTinh;
+            this.maThuongHieu = maThuongHieu;
             this.moTa = moTa;
             this.hinhAnh = hinhAnh;
+            this.maKhuyenMai = maKhuyenMai;
+            this.soLuong = soLuong;
             this.gia = gia;
         }
     }

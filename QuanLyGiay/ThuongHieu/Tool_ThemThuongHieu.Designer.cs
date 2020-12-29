@@ -33,7 +33,7 @@ namespace GUI_QuanLyGiay.ThuongHieu
             this.panel1 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.ptbHinh = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnThem = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txbMaThuongHieu = new System.Windows.Forms.TextBox();
             this.btnChonAnh = new System.Windows.Forms.Button();
@@ -52,7 +52,7 @@ namespace GUI_QuanLyGiay.ThuongHieu
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.ptbHinh);
-            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.btnThem);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.txbMaThuongHieu);
             this.panel1.Controls.Add(this.btnChonAnh);
@@ -81,6 +81,7 @@ namespace GUI_QuanLyGiay.ThuongHieu
             this.button2.TabIndex = 15;
             this.button2.Text = "Hủy bỏ";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // ptbHinh
             // 
@@ -91,21 +92,22 @@ namespace GUI_QuanLyGiay.ThuongHieu
             this.ptbHinh.TabIndex = 14;
             this.ptbHinh.TabStop = false;
             // 
-            // button3
+            // btnThem
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(167)))), ((int)(((byte)(69)))));
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.ForestGreen;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(443, 248);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(113, 38);
-            this.button3.TabIndex = 12;
-            this.button3.Text = "Thêm";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(167)))), ((int)(((byte)(69)))));
+            this.btnThem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnThem.FlatAppearance.BorderSize = 0;
+            this.btnThem.FlatAppearance.MouseOverBackColor = System.Drawing.Color.ForestGreen;
+            this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThem.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnThem.ForeColor = System.Drawing.Color.White;
+            this.btnThem.Location = new System.Drawing.Point(443, 248);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(113, 38);
+            this.btnThem.TabIndex = 12;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // label2
             // 
@@ -227,7 +229,7 @@ namespace GUI_QuanLyGiay.ThuongHieu
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox ptbHinh;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Button btnChonAnh;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txbMoTa;

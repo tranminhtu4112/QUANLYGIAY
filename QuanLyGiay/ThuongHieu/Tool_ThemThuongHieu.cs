@@ -1,4 +1,5 @@
-﻿using DTO_QuayLyGiay;
+﻿using BUS_QuanLyGiay;
+using DTO_QuayLyGiay;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,10 +14,14 @@ namespace GUI_QuanLyGiay.ThuongHieu
 {
     public partial class Tool_ThemThuongHieu : Form
     {
+        public bool isClickThem { set; get; }
         int mov, movX, movY;
+        private BUS_ThuongHieu busThuongHieu = new BUS_ThuongHieu();
+
         public Tool_ThemThuongHieu()
         {
             InitializeComponent();
+            this.isClickThem = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -60,13 +65,17 @@ namespace GUI_QuanLyGiay.ThuongHieu
         {
             txbMaThuongHieu.Focus();
         }
-
         private void Tool_ThemThuongHieu_MouseMove(object sender, MouseEventArgs e)
         {
             if (mov == 1)
             {
                 this.SetDesktopLocation(MousePosition.X - movX, MousePosition.Y - movY);
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
         public Object checkAndReturnThuongHieu()
@@ -87,6 +96,27 @@ namespace GUI_QuanLyGiay.ThuongHieu
             byte[] hinhAnh = stream.ToArray();
 
             return new DTO_ThuongHieu(maThuongHieu, tenThuongHieu, moTa, hinhAnh);
+        }
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            Object obj = checkAndReturnThuongHieu();
+            if (obj is String)
+            {
+                MessageBox.Show(obj.ToString());
+                return;
+            }
+            if (busThuongHieu.addThuongHieu((DTO_ThuongHieu)obj))
+            {
+                String thongBao = "Thêm mới thành công!";
+                TBThemSuaXoa tBThem = new TBThemSuaXoa(thongBao);
+                tBThem.ShowDialog();
+                this.Close();
+                this.isClickThem = true;
+            }
+            else
+            {
+                MessageBox.Show("Lỗi phần mềm!");
+            }
         }
     }
 }

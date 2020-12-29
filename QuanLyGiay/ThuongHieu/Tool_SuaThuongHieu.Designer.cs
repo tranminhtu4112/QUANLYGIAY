@@ -31,10 +31,10 @@ namespace GUI_QuanLyGiay
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tool_SuaThuongHieu));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.ptbHinh = new System.Windows.Forms.PictureBox();
+            this.btnHuy = new System.Windows.Forms.Button();
+            this.btnLuuMoi = new System.Windows.Forms.Button();
+            this.btnChonAnh = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.txbMoTa = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,16 +44,16 @@ namespace GUI_QuanLyGiay
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbHinh)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.ptbHinh);
+            this.panel1.Controls.Add(this.btnHuy);
+            this.panel1.Controls.Add(this.btnLuuMoi);
+            this.panel1.Controls.Add(this.btnChonAnh);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.txbMoTa);
             this.panel1.Controls.Add(this.label3);
@@ -65,40 +65,43 @@ namespace GUI_QuanLyGiay
             this.panel1.Size = new System.Drawing.Size(598, 300);
             this.panel1.TabIndex = 0;
             // 
-            // pictureBox1
+            // ptbHinh
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(402, 66);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(146, 118);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            this.ptbHinh.Location = new System.Drawing.Point(402, 66);
+            this.ptbHinh.Name = "ptbHinh";
+            this.ptbHinh.Size = new System.Drawing.Size(146, 118);
+            this.ptbHinh.TabIndex = 3;
+            this.ptbHinh.TabStop = false;
             // 
-            // button4
+            // btnHuy
             // 
-            this.button4.Location = new System.Drawing.Point(314, 250);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(92, 37);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "Hủy";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnHuy.Location = new System.Drawing.Point(314, 250);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Size = new System.Drawing.Size(92, 37);
+            this.btnHuy.TabIndex = 2;
+            this.btnHuy.Text = "Hủy";
+            this.btnHuy.UseVisualStyleBackColor = true;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
-            // button3
+            // btnLuuMoi
             // 
-            this.button3.Location = new System.Drawing.Point(456, 250);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(92, 37);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Lưu";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnLuuMoi.Location = new System.Drawing.Point(456, 250);
+            this.btnLuuMoi.Name = "btnLuuMoi";
+            this.btnLuuMoi.Size = new System.Drawing.Size(92, 37);
+            this.btnLuuMoi.TabIndex = 2;
+            this.btnLuuMoi.Text = "Lưu mới";
+            this.btnLuuMoi.UseVisualStyleBackColor = true;
+            this.btnLuuMoi.Click += new System.EventHandler(this.btnLuuMoi_Click);
             // 
-            // button2
+            // btnChonAnh
             // 
-            this.button2.Location = new System.Drawing.Point(402, 37);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(146, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Chọn ảnh";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnChonAnh.Location = new System.Drawing.Point(402, 37);
+            this.btnChonAnh.Name = "btnChonAnh";
+            this.btnChonAnh.Size = new System.Drawing.Size(146, 23);
+            this.btnChonAnh.TabIndex = 2;
+            this.btnChonAnh.Text = "Chọn ảnh";
+            this.btnChonAnh.UseVisualStyleBackColor = true;
+            this.btnChonAnh.Click += new System.EventHandler(this.btnChonAnh_Click);
             // 
             // label4
             // 
@@ -148,6 +151,7 @@ namespace GUI_QuanLyGiay
             // 
             this.txbMaThuongHieu.Location = new System.Drawing.Point(160, 38);
             this.txbMaThuongHieu.Name = "txbMaThuongHieu";
+            this.txbMaThuongHieu.ReadOnly = true;
             this.txbMaThuongHieu.Size = new System.Drawing.Size(173, 23);
             this.txbMaThuongHieu.TabIndex = 0;
             // 
@@ -194,7 +198,7 @@ namespace GUI_QuanLyGiay
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Tool_SuaThuongHieu_MouseUp);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbHinh)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -205,10 +209,10 @@ namespace GUI_QuanLyGiay
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.PictureBox ptbHinh;
+        private System.Windows.Forms.Button btnHuy;
+        private System.Windows.Forms.Button btnLuuMoi;
+        private System.Windows.Forms.Button btnChonAnh;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txbMoTa;
         private System.Windows.Forms.Label label3;

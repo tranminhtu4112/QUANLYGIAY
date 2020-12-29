@@ -1,7 +1,7 @@
 ﻿
 namespace GUI_QuanLyGiay
 {
-    partial class TBThem
+    partial class TBThemSuaXoa
     {
         /// <summary>
         /// Required designer variable.
@@ -29,9 +29,9 @@ namespace GUI_QuanLyGiay
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TBThem));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TBThemSuaXoa));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblThongBao = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -43,7 +43,7 @@ namespace GUI_QuanLyGiay
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.lblThongBao);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Location = new System.Drawing.Point(7, 35);
@@ -51,17 +51,16 @@ namespace GUI_QuanLyGiay
             this.panel1.Size = new System.Drawing.Size(379, 207);
             this.panel1.TabIndex = 0;
             // 
-            // label2
+            // lblThongBao
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(94, 109);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(192, 18);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Thêm mới thành công!";
+            this.lblThongBao.AutoSize = true;
+            this.lblThongBao.BackColor = System.Drawing.Color.White;
+            this.lblThongBao.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblThongBao.ForeColor = System.Drawing.Color.Black;
+            this.lblThongBao.Location = new System.Drawing.Point(95, 109);
+            this.lblThongBao.Name = "lblThongBao";
+            this.lblThongBao.Size = new System.Drawing.Size(0, 18);
+            this.lblThongBao.TabIndex = 5;
             // 
             // pictureBox1
             // 
@@ -113,7 +112,7 @@ namespace GUI_QuanLyGiay
             this.label1.TabIndex = 4;
             this.label1.Text = "Thông báo";
             // 
-            // TBThem
+            // TBThemSua
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -123,7 +122,7 @@ namespace GUI_QuanLyGiay
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "TBThem";
+            this.Name = "TBThemSua";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TBThem";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TBThem_MouseDown);
@@ -144,6 +143,6 @@ namespace GUI_QuanLyGiay
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblThongBao;
     }
 }
