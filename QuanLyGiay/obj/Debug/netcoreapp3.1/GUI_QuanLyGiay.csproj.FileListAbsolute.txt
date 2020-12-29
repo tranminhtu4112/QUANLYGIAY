@@ -35,3 +35,4 @@ C:\Users\Tuan\source\repos\QuanLyGiay\QuanLyGiay\obj\Debug\netcoreapp3.1\GUI_Qua
 C:\Users\Tuan\source\repos\QuanLyGiay\QuanLyGiay\obj\Debug\netcoreapp3.1\GUI_QuanLyGiay.DangNhap.resources
 C:\Users\Tuan\source\repos\QuanLyGiay\QuanLyGiay\obj\Debug\netcoreapp3.1\GUI_QuanLyGiay.QLThuongHieu.resources
 C:\Users\Tuan\source\repos\QuanLyGiay\QuanLyGiay\obj\Debug\netcoreapp3.1\GUI_QuanLyGiay.Tool_SuaThuongHieu.resources
+C:\Users\Tuan\source\repos\QuanLyGiay\QuanLyGiay\obj\Debug\netcoreapp3.1\GUI_QuanLyGiay.ThuongHieu.Tool_ThemThuongHieu.resources

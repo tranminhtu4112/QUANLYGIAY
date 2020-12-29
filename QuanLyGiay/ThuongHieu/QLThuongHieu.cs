@@ -1,4 +1,6 @@
 ﻿using BUS_QuanLyGiay;
+using DTO_QuayLyGiay;
+using GUI_QuanLyGiay.ThuongHieu;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -29,37 +31,52 @@ namespace GUI_QuanLyGiay
 
             lvwThuongHieu.FullRowSelect = true;
             lvwThuongHieu.View = View.Details;
-            ImageList imgs = new ImageList();
-            imgs.ImageSize = new Size(50, 50);
-
-            foreach (DataRow row in busThuongHieu.getAllThuongHieu().Rows)
-            {
-                if(row[4] == null)
-                {
-                    MemoryStream memoryStream = new MemoryStream((Byte[])row[4]);
-                    Image img = Image.FromStream(memoryStream);
-                    imgs.Images.Add(img);
-                }
-            }
+            ImageList imgList = new ImageList();
+            imgList.ImageSize = new Size(50, 50);
 
             int stt = 0;
-            lvwThuongHieu.SmallImageList = imgs;
             foreach (DataRow row in busThuongHieu.getAllThuongHieu().Rows)
             {
                 stt++;
-                ListViewItem item = new ListViewItem("");
+                ListViewItem item = new ListViewItem();
                 item.SubItems.Add(stt.ToString());
                 item.SubItems.Add(row[1].ToString());
                 item.SubItems.Add(row[2].ToString());
                 item.SubItems.Add(row[3].ToString());
-                item.ImageIndex = stt - 1;
+
+                /*MemoryStream memoryStream = new MemoryStream((Byte[])row[4]);
+                Image img = Image.FromStream(memoryStream);
+                imgList.Images.Add(img);
+                lvwThuongHieu.SmallImageList = imgList;
+                item.ImageIndex = stt - 1;*/
+
                 lvwThuongHieu.Items.Add(item);
             }
         }
 
         private void btnLamMoi_Click(object sender, EventArgs e)
         {
+            
+        }
 
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            if(lvwThuongHieu.SelectedItems.Count > 0)
+            {
+                ListViewItem item = lvwThuongHieu.SelectedItems[0];
+                DTO_ThuongHieu dtoThuongHieu = new DTO_ThuongHieu();
+                dtoThuongHieu.maThuongHieu = item.SubItems[2].Text;
+                dtoThuongHieu.tenThuongHieu = item.SubItems[3].Text;
+                dtoThuongHieu.moTa = item.SubItems[4].Text;
+                Tool_SuaThuongHieu toolSuaThuongHieu = new Tool_SuaThuongHieu(dtoThuongHieu);
+                toolSuaThuongHieu.ShowDialog();
+            }
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            Tool_ThemThuongHieu toolThemThuongHieu = new Tool_ThemThuongHieu();
+            toolThemThuongHieu.ShowDialog();
         }
     }
 }

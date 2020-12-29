@@ -51,6 +51,7 @@ namespace GUI_QuanLyGiay
             // btnThem
             // 
             this.btnThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(167)))), ((int)(((byte)(69)))));
+            this.btnThem.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnThem.FlatAppearance.BorderSize = 0;
             this.btnThem.FlatAppearance.MouseOverBackColor = System.Drawing.Color.ForestGreen;
             this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -69,6 +70,7 @@ namespace GUI_QuanLyGiay
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -87,6 +89,7 @@ namespace GUI_QuanLyGiay
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(7)))));
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(126)))), ((int)(((byte)(20)))));
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -102,6 +105,7 @@ namespace GUI_QuanLyGiay
             // 
             // btnXuatExcel
             // 
+            this.btnXuatExcel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnXuatExcel.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
             this.btnXuatExcel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.ForestGreen;
             this.btnXuatExcel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

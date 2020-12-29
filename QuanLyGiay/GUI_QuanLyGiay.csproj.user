@@ -4,28 +4,28 @@
     <Compile Update="DanhSachGiay.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="DangNhap.cs">
+    <Compile Update="DangNhap\DangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FormMain.cs">
+    <Compile Update="Main\FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="QLSanPham.cs">
+    <Compile Update="SanPham\QLSanPham.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="QLThuongHieu.cs">
+    <Compile Update="ThuongHieu\QLThuongHieu.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="TBThem.cs">
+    <Compile Update="ThongBao\TBThem.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="TBXoa.cs">
+    <Compile Update="ThongBao\TBXoa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Tool_SuaThuongHieu.cs">
+    <Compile Update="ThuongHieu\Tool_ThemThuongHieu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="TrangChu.cs">
+    <Compile Update="TrangChu\TrangChu.cs">
       <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>
