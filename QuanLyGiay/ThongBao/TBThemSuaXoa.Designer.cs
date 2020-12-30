@@ -83,7 +83,7 @@ namespace GUI_QuanLyGiay
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(113, 38);
             this.button2.TabIndex = 3;
-            this.button2.Text = "Dồng ý";
+            this.button2.Text = "Đóng";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -112,7 +112,7 @@ namespace GUI_QuanLyGiay
             this.label1.TabIndex = 4;
             this.label1.Text = "Thông báo";
             // 
-            // TBThemSua
+            // TBThemSuaXoa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -122,7 +122,7 @@ namespace GUI_QuanLyGiay
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "TBThemSua";
+            this.Name = "TBThemSuaXoa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TBThem";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TBThem_MouseDown);

@@ -36,3 +36,10 @@ C:\Users\Tuan\source\repos\QuanLyGiay\QuanLyGiay\obj\Debug\netcoreapp3.1\GUI_Qua
 C:\Users\Tuan\source\repos\QuanLyGiay\QuanLyGiay\obj\Debug\netcoreapp3.1\GUI_QuanLyGiay.Tool_SuaThuongHieu.resources
 C:\Users\Tuan\source\repos\QuanLyGiay\QuanLyGiay\obj\Debug\netcoreapp3.1\GUI_QuanLyGiay.ThuongHieu.Tool_ThemThuongHieu.resources
 C:\Users\Tuan\source\repos\QuanLyGiay\QuanLyGiay\obj\Debug\netcoreapp3.1\GUI_QuanLyGiay.TBThemSuaXoa.resources
+C:\Users\Tuan\source\repos\QuanLyGiay\QuanLyGiay\obj\Debug\netcoreapp3.1\GUI_QuanLyGiay.GioiTinh.QLGioiTinh.resources
+C:\Users\Tuan\source\repos\QuanLyGiay\QuanLyGiay\obj\Debug\netcoreapp3.1\GUI_QuanLyGiay.GioiTinh.Tool_ThemGioiTinh.resources
+C:\Users\Tuan\source\repos\QuanLyGiay\QuanLyGiay\obj\Debug\netcoreapp3.1\GUI_QuanLyGiay.DonDatHang.QLDonDatHang.resources
+C:\Users\Tuan\source\repos\QuanLyGiay\QuanLyGiay\obj\Debug\netcoreapp3.1\GUI_QuanLyGiay.HoaDon.QLHoaDon.resources
+C:\Users\Tuan\source\repos\QuanLyGiay\QuanLyGiay\obj\Debug\netcoreapp3.1\GUI_QuanLyGiay.KhuyenMai.QLKhuyenMai.resources
+C:\Users\Tuan\source\repos\QuanLyGiay\QuanLyGiay\obj\Debug\netcoreapp3.1\GUI_QuanLyGiay.ThongKe.QLThongKe.resources
+C:\Users\Tuan\source\repos\QuanLyGiay\QuanLyGiay\obj\Debug\netcoreapp3.1\GUI_QuanLyGiay.DuTru.DuTru.resources

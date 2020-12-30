@@ -23,16 +23,16 @@ namespace GUI_QuanLyGiay
         public void loadDatathuongHieu()
         {
             lvwThuongHieu.Clear();
-            lvwThuongHieu.Columns.Add("Hình ảnh", 60);
-            lvwThuongHieu.Columns.Add("STT", 60);
-            lvwThuongHieu.Columns.Add("Mã Thương hiệu", 60);
-            lvwThuongHieu.Columns.Add("Tên Thương hiệu", 60);
-            lvwThuongHieu.Columns.Add("Mô tả", 60);
+            lvwThuongHieu.Columns.Add("Hình ảnh", 110);
+            lvwThuongHieu.Columns.Add("STT", 70);
+            lvwThuongHieu.Columns.Add("Mã Thương hiệu", 150);
+            lvwThuongHieu.Columns.Add("Tên Thương hiệu", 200);
+            lvwThuongHieu.Columns.Add("Mô tả", 200);
 
             lvwThuongHieu.FullRowSelect = true;
             lvwThuongHieu.View = View.Details;
             ImageList imgList = new ImageList();
-            imgList.ImageSize = new Size(50, 50);
+            imgList.ImageSize = new Size(100, 100);
 
             int stt = 0;
             foreach (DataRow row in busThuongHieu.getAllThuongHieu().Rows)
@@ -61,7 +61,7 @@ namespace GUI_QuanLyGiay
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            if(lvwThuongHieu.SelectedItems.Count > 0)
+            if (lvwThuongHieu.SelectedItems.Count > 0)
             {
                 ListViewItem item = lvwThuongHieu.SelectedItems[0];
                 DTO_ThuongHieu dtoThuongHieu = new DTO_ThuongHieu();
@@ -82,13 +82,11 @@ namespace GUI_QuanLyGiay
         {
             Tool_ThemThuongHieu toolThemThuongHieu = new Tool_ThemThuongHieu();
             toolThemThuongHieu.ShowDialog();
-            if(toolThemThuongHieu.isClickThem)
+            if (toolThemThuongHieu.isClickThem)
             {
                 loadDatathuongHieu();
             }
-            
         }
-
         private void btnXoa_Click(object sender, EventArgs e)
         {
             if (lvwThuongHieu.SelectedItems.Count > 0)
@@ -110,7 +108,6 @@ namespace GUI_QuanLyGiay
                         MessageBox.Show("Lỗi phần mềm!");
                     }
                 }
-
             }
         }
     }

@@ -40,7 +40,13 @@ namespace GUI_QuanLyGiay.ThuongHieu
         {
             mov = 0;
         }
-
+        private void Tool_ThemThuongHieu_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (mov == 1)
+            {
+                this.SetDesktopLocation(MousePosition.X - movX, MousePosition.Y - movY);
+            }
+        }
         private void btnChonAnh_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
@@ -65,13 +71,7 @@ namespace GUI_QuanLyGiay.ThuongHieu
         {
             txbMaThuongHieu.Focus();
         }
-        private void Tool_ThemThuongHieu_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (mov == 1)
-            {
-                this.SetDesktopLocation(MousePosition.X - movX, MousePosition.Y - movY);
-            }
-        }
+       
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -109,8 +109,8 @@ namespace GUI_QuanLyGiay.ThuongHieu
             {
                 String thongBao = "Thêm mới thành công!";
                 TBThemSuaXoa tBThem = new TBThemSuaXoa(thongBao);
-                tBThem.ShowDialog();
                 this.Close();
+                tBThem.ShowDialog();
                 this.isClickThem = true;
             }
             else

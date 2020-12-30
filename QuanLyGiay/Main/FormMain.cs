@@ -63,6 +63,48 @@ namespace QuanLyGiay
             qlThuongHieu1.BringToFront();
         }
 
+        private void btnQLGioiTinh_Click(object sender, EventArgs e)
+        {
+            SidePanel.Height = btnQLGioiTinh.Height;
+            SidePanel.Top = btnQLGioiTinh.Top;
+            qlGioiTinh1.BringToFront();
+        }
+
+        private void btnKhuyenMai_Click(object sender, EventArgs e)
+        {
+            SidePanel.Height = btnKhuyenMai.Height;
+            SidePanel.Top = btnKhuyenMai.Top;
+            qlKhuyenMai1.BringToFront();
+        }
+
+        private void btnDonDatHang_Click(object sender, EventArgs e)
+        {
+            SidePanel.Height = btnDonDatHang.Height;
+            SidePanel.Top = btnDonDatHang.Top;
+            qlDonDatHang1.BringToFront();
+        }
+
+        private void btnHoaDon_Click(object sender, EventArgs e)
+        {
+            SidePanel.Height = btnHoaDon.Height;
+            SidePanel.Top = btnHoaDon.Top;
+            qlHoaDon1.BringToFront();
+        }
+
+        private void btnThongKe_Click(object sender, EventArgs e)
+        {
+            SidePanel.Height = btnThongKe.Height;
+            SidePanel.Top = btnThongKe.Top;
+            qlThongKe1.BringToFront();
+        }
+
+        private void btnDuTru_Click(object sender, EventArgs e)
+        {
+            SidePanel.Height = btnDuTru.Height;
+            SidePanel.Top = btnDuTru.Top;
+            duTru1.BringToFront();
+        }
+
         private void panel2_MouseMove(object sender, MouseEventArgs e)
         {
             if(mov == 1)

@@ -7,10 +7,31 @@
     <Compile Update="DangNhap\DangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="DonDatHang\QLDonDatHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="DuTru\DuTru.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="GioiTinh\QLGioiTinh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="GioiTinh\Tool_ThemGioiTinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="HoaDon\QLHoaDon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="KhuyenMai\QLKhuyenMai.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="Main\FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="SanPham\QLSanPham.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ThongKe\QLThongKe.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="ThuongHieu\QLThuongHieu.cs">

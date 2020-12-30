@@ -75,22 +75,31 @@ namespace GUI_QuanLyGiay
             // 
             // btnHuy
             // 
-            this.btnHuy.Location = new System.Drawing.Point(314, 250);
+            this.btnHuy.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnHuy.FlatAppearance.BorderSize = 0;
+            this.btnHuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHuy.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnHuy.Location = new System.Drawing.Point(306, 250);
             this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(92, 37);
+            this.btnHuy.Size = new System.Drawing.Size(113, 38);
             this.btnHuy.TabIndex = 2;
-            this.btnHuy.Text = "Hủy";
-            this.btnHuy.UseVisualStyleBackColor = true;
+            this.btnHuy.Text = "Hủy bỏ";
+            this.btnHuy.UseVisualStyleBackColor = false;
             this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // btnLuuMoi
             // 
+            this.btnLuuMoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(7)))));
+            this.btnLuuMoi.FlatAppearance.BorderSize = 0;
+            this.btnLuuMoi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(126)))), ((int)(((byte)(20)))));
+            this.btnLuuMoi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLuuMoi.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnLuuMoi.Location = new System.Drawing.Point(456, 250);
             this.btnLuuMoi.Name = "btnLuuMoi";
-            this.btnLuuMoi.Size = new System.Drawing.Size(92, 37);
+            this.btnLuuMoi.Size = new System.Drawing.Size(113, 38);
             this.btnLuuMoi.TabIndex = 2;
             this.btnLuuMoi.Text = "Lưu mới";
-            this.btnLuuMoi.UseVisualStyleBackColor = true;
+            this.btnLuuMoi.UseVisualStyleBackColor = false;
             this.btnLuuMoi.Click += new System.EventHandler(this.btnLuuMoi_Click);
             // 
             // btnChonAnh
