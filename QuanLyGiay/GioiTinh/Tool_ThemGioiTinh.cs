@@ -25,26 +25,21 @@ namespace GUI_QuanLyGiay.GioiTinh
         {
             this.Close();
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
         private void Tool_ThemGioiTinh_MouseDown(object sender, MouseEventArgs e)
         {
             mov = 1;
             movX = e.X;
             movY = e.Y;
         }
-
         private void Tool_ThemGioiTinh_MouseUp(object sender, MouseEventArgs e)
         {
             mov = 0;
         }
-
         
-
         private void Tool_ThemGioiTinh_MouseMove(object sender, MouseEventArgs e)
         {
             if (mov == 1)

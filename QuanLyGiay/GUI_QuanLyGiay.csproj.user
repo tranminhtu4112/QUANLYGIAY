@@ -16,6 +16,9 @@
     <Compile Update="GioiTinh\QLGioiTinh.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="GioiTinh\Tool_SuaGioiTinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="GioiTinh\Tool_ThemGioiTinh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -24,6 +27,12 @@
     </Compile>
     <Compile Update="KhuyenMai\QLKhuyenMai.cs">
       <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="KhuyenMai\Tool_SuaKhuyenMai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="KhuyenMai\Tool_ThemKhuyenMai.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Update="Main\FormMain.cs">
       <SubType>Form</SubType>

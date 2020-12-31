@@ -37,14 +37,15 @@ namespace GUI_QuanLyGiay
             this.btnXuatExcel = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // listView1
             // 
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(60, 123);
+            this.listView1.Location = new System.Drawing.Point(36, 168);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(728, 432);
+            this.listView1.Size = new System.Drawing.Size(876, 412);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
@@ -59,7 +60,7 @@ namespace GUI_QuanLyGiay
             this.btnThem.ForeColor = System.Drawing.Color.White;
             this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
             this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.Location = new System.Drawing.Point(807, 151);
+            this.btnThem.Location = new System.Drawing.Point(349, 106);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(125, 41);
             this.btnThem.TabIndex = 1;
@@ -78,7 +79,7 @@ namespace GUI_QuanLyGiay
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(807, 219);
+            this.button2.Location = new System.Drawing.Point(497, 106);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(125, 41);
             this.button2.TabIndex = 1;
@@ -96,7 +97,7 @@ namespace GUI_QuanLyGiay
             this.button3.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(807, 291);
+            this.button3.Location = new System.Drawing.Point(642, 106);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(125, 41);
             this.button3.TabIndex = 1;
@@ -113,7 +114,7 @@ namespace GUI_QuanLyGiay
             this.btnXuatExcel.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnXuatExcel.Image = ((System.Drawing.Image)(resources.GetObject("btnXuatExcel.Image")));
             this.btnXuatExcel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXuatExcel.Location = new System.Drawing.Point(807, 514);
+            this.btnXuatExcel.Location = new System.Drawing.Point(787, 106);
             this.btnXuatExcel.Name = "btnXuatExcel";
             this.btnXuatExcel.Size = new System.Drawing.Size(125, 41);
             this.btnXuatExcel.TabIndex = 1;
@@ -122,23 +123,34 @@ namespace GUI_QuanLyGiay
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(60, 71);
+            this.textBox1.Location = new System.Drawing.Point(36, 84);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(166, 23);
+            this.textBox1.Size = new System.Drawing.Size(172, 23);
             this.textBox1.TabIndex = 2;
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(278, 71);
+            this.comboBox1.Location = new System.Drawing.Point(36, 124);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(172, 23);
             this.comboBox1.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Lucida Fax", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(323, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(275, 32);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Quản lý sản phẩm";
             // 
             // QLSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnXuatExcel);
@@ -164,5 +176,6 @@ namespace GUI_QuanLyGiay
         private System.Windows.Forms.Button btnXuatExcel;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label1;
     }
 }

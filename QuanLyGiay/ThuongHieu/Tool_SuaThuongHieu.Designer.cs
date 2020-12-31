@@ -76,6 +76,7 @@ namespace GUI_QuanLyGiay
             // btnHuy
             // 
             this.btnHuy.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnHuy.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHuy.FlatAppearance.BorderSize = 0;
             this.btnHuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHuy.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -90,6 +91,7 @@ namespace GUI_QuanLyGiay
             // btnLuuMoi
             // 
             this.btnLuuMoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(7)))));
+            this.btnLuuMoi.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLuuMoi.FlatAppearance.BorderSize = 0;
             this.btnLuuMoi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(126)))), ((int)(((byte)(20)))));
             this.btnLuuMoi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

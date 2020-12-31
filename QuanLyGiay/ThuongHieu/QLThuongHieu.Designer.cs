@@ -35,6 +35,7 @@ namespace GUI_QuanLyGiay
             this.btnThem = new System.Windows.Forms.Button();
             this.lvwThuongHieu = new System.Windows.Forms.ListView();
             this.btnLamMoi = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnSua
@@ -112,10 +113,21 @@ namespace GUI_QuanLyGiay
             this.btnLamMoi.UseVisualStyleBackColor = true;
             this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Lucida Fax", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(323, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(307, 32);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Quản lý thương hiệu";
+            // 
             // QLThuongHieu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnLamMoi);
             this.Controls.Add(this.lvwThuongHieu);
             this.Controls.Add(this.btnSua);
@@ -125,6 +137,7 @@ namespace GUI_QuanLyGiay
             this.Name = "QLThuongHieu";
             this.Size = new System.Drawing.Size(953, 603);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -135,5 +148,6 @@ namespace GUI_QuanLyGiay
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.ListView lvwThuongHieu;
         private System.Windows.Forms.Button btnLamMoi;
+        private System.Windows.Forms.Label label1;
     }
 }

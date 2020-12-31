@@ -59,12 +59,12 @@ namespace GUI_QuanLyGiay.GioiTinh
                 dtoGioiTinh.tenGioiTinh = item.SubItems[2].Text;
                 dtoGioiTinh.moTa = item.SubItems[3].Text;
 
-                /*Tool_SuaGioiTinh toolSuaGioiTinh = new Tool_SuaGioiTinh(dtoGioiTinh);
-                toolSuaThuongHieu.ShowDialog();
-                if (toolSuaThuongHieu.isClickSua)
+                Tool_SuaGioiTinh toolSuaGioiTinh = new Tool_SuaGioiTinh(dtoGioiTinh);
+                toolSuaGioiTinh.ShowDialog();
+                if (toolSuaGioiTinh.isClickSua)
                 {
                     loadDataGioiTinh();
-                }*/
+                }
             }
         }
         private void btnXoa_Click(object sender, EventArgs e)

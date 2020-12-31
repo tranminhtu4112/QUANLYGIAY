@@ -119,6 +119,7 @@ namespace GUI_QuanLyGiay
             // btnHuy
             // 
             this.btnHuy.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnHuy.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHuy.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnHuy.FlatAppearance.BorderSize = 0;
             this.btnHuy.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
@@ -131,10 +132,12 @@ namespace GUI_QuanLyGiay
             this.btnHuy.TabIndex = 0;
             this.btnHuy.Text = "Hủy bỏ";
             this.btnHuy.UseVisualStyleBackColor = false;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // btnXoa
             // 
             this.btnXoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.btnXoa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnXoa.FlatAppearance.BorderSize = 0;
             this.btnXoa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

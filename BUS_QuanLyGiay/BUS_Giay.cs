@@ -9,21 +9,22 @@ namespace BUS_QuanLyGiay
 {
     public class BUS_Giay
     {
-        private DAL_Giay dallGiay = new DAL_Giay();
+        private DAL_Giay dalGiay = new DAL_Giay();
         public DataTable getAllGiay()
         {
-            return dallGiay.getAllGiay();
+            return dalGiay.getAllGiay();
         }
-        public DataTable getAllInfoGiay()
+        public bool addGiay(DTO_Giay dtoGiay)
         {
-            return dallGiay.getAllInfoGiay();
+            return dalGiay.addGiay(dtoGiay);
         }
-        public void AddGiay(DTO_Giay giay)
+        public bool editGiay(DTO_Giay dtoGiay)
         {
-            return;
-            //dallGiay.AddGiay(giay);
+            return dalGiay.editGiay(dtoGiay);
         }
-
-
+        public bool deleteGiay(String maGiay)
+        {
+            return dalGiay.deleteGiay(maGiay);
+        }
     }
 }

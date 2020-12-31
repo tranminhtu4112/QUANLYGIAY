@@ -27,13 +27,15 @@ namespace GUI_QuanLyGiay
             movX = e.X;
             movY = e.Y;
         }
-
         private void btnXoa_Click(object sender, EventArgs e)
         {
             this.isClickXoa = true;
             this.Close();
         }
-
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
         private void panel1_MouseUp_1(object sender, MouseEventArgs e)
         {
             mov = 0;

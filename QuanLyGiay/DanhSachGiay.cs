@@ -16,23 +16,23 @@ namespace QuanLyGiay
 {
     public partial class DanhSachGiay : Form
     {
-        private BUS_Giay busGiay = new BUS_Giay();
+       /* private BUS_Giay busGiay = new BUS_Giay();
         private BUS_MaLoai busMaLoai = new BUS_MaLoai();
-        private BUS_GioiTinh busGioiTinh = new BUS_GioiTinh();
+        private BUS_GioiTinh busGioiTinh = new BUS_GioiTinh();*/
         public DanhSachGiay()
         {
             InitializeComponent();
-            loadDataGiay();
+          /*  loadDataGiay();
             loadDataMaLoai();
             loadDataGioiTinh();
-            loadDataListViewGiay();
+            loadDataListViewGiay();*/
         }
         public void loadDataGiay()
         {
-            dgvDanhSach.DataSource = busGiay.getAllInfoGiay();
+          //  dgvDanhSach.DataSource = busGiay.getAllInfoGiay();
         }
         public void loadDataListViewGiay()
-        {
+        {/*
             ltvGiay.FullRowSelect = true;
             ltvGiay.View = View.Details;
             ImageList imgs = new ImageList();
@@ -59,30 +59,30 @@ namespace QuanLyGiay
 
                 item.ImageIndex = stt - 1;
                 ltvGiay.Items.Add(item);
-            }
+            }*/
         }
         public void loadDataMaLoai()
         {
-            foreach (DataRow row in busMaLoai.getAllMaLoai().Rows)
+           /* foreach (DataRow row in busMaLoai.getAllMaLoai().Rows)
             {
                 cbbMaLoai.Items.Add(row[1].ToString());
             }
-            cbbMaLoai.SelectedIndex = 0;
+            cbbMaLoai.SelectedIndex = 0;*/
         }
         public void loadDataGioiTinh()
         {
-            Dictionary<string, string> comboSource = new Dictionary<string, string>();
+            /*Dictionary<string, string> comboSource = new Dictionary<string, string>();
             cbbGioiTinhGiay.DisplayMember = "Value";
             cbbGioiTinhGiay.ValueMember = "Key";
             foreach (DataRow row in busGioiTinh.getAllGioiTinh().Rows)
             {
                 comboSource.Add(row[0].ToString(), row[1].ToString());
             }
-            cbbGioiTinhGiay.DataSource = new BindingSource(comboSource, null);
+            cbbGioiTinhGiay.DataSource = new BindingSource(comboSource, null);*/
         }
-        public Object checkAndReturnGiay()
-        {
-            if (txbMa.Text == "")
+        //public Object checkAndReturnGiay()
+        //{
+           /* if (txbMa.Text == "")
                 return "Mã không được trống!";
             if (cbbMaLoai.Text == "")
                 return "Mã loại không được trống!";
@@ -107,11 +107,11 @@ namespace QuanLyGiay
             byte[] hinhAnh = stream.ToArray();
             
             float gia = float.Parse(txbGia.Text);
-            return null;
-        }
+            return null;*/
+      //  }
         private void btnThem_Click(object sender, EventArgs e)
         {
-            try
+            /*try
             {
                 Object obj = checkAndReturnGiay();
                 if (obj is String)
@@ -127,14 +127,14 @@ namespace QuanLyGiay
             {
                 ex.ToString();
                 MessageBox.Show("Lỗi Phầm mềm!");
-            }
+            }*/
         }
         private void btnXoa_Click(object sender, EventArgs e)
         {
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
+           /* OpenFileDialog openFileDialog = new OpenFileDialog();
             try
             {
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
@@ -149,7 +149,7 @@ namespace QuanLyGiay
             {
                 ex.ToString();
                 MessageBox.Show("FIle không đúng!");
-            }
+            }*/
         }
         private void btnGetImg_Click(object sender, EventArgs e)
         {
