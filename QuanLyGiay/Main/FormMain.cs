@@ -16,6 +16,7 @@ namespace QuanLyGiay
     public partial class FormMain : Form
     {
         int mov, movX, movY;
+        public DTO_DangNhap dtoDangNhap { set; get; }
         public FormMain()
         {
             InitializeComponent();
@@ -23,6 +24,15 @@ namespace QuanLyGiay
             SidePanel.Top = button1.Top;
             trangChu1.BringToFront();
         }
+        public FormMain(DTO_DangNhap dtoDangNhap)
+        {
+            InitializeComponent();
+            SidePanel.Height = button1.Height;
+            SidePanel.Top = button1.Top;
+            trangChu1.BringToFront();
+            this.dtoDangNhap = dtoDangNhap;
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             SidePanel.Height = button1.Height;
@@ -103,6 +113,20 @@ namespace QuanLyGiay
             SidePanel.Height = btnDuTru.Height;
             SidePanel.Top = btnDuTru.Top;
             duTru1.BringToFront();
+        }
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+            String[] name = this.dtoDangNhap.tenNhanVien.ToString().Split(" ");
+            txbChaoNhanVien.Text = name[name.Length - 1].ToString();
+        }
+
+        private void btnDangXuat_Click(object sender, EventArgs e)
+        {
+            this.dtoDangNhap = null;
+            this.Close();
+            DangNhap dangNhap = new DangNhap();
+            dangNhap.Show();
         }
 
         private void panel2_MouseMove(object sender, MouseEventArgs e)

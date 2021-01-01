@@ -19,8 +19,9 @@ namespace BUS_QuanLyGiay
             DTO_DangNhap dTO_DangNhap = new DTO_DangNhap();
             foreach (DataRow dr in dataTable.Rows)
             {
+                dTO_DangNhap.tenNhanVien = dr["tennhanvien"].ToString();
                 dTO_DangNhap.userName = dr["username"].ToString();
-                dTO_DangNhap.password = dr["password"].ToString();
+                dTO_DangNhap.password = dr["upassword"].ToString();
             }
             return dTO_DangNhap;
         }
@@ -31,6 +32,10 @@ namespace BUS_QuanLyGiay
                 return true;
             }
             return false;
+        }
+        public DTO_DangNhap getUser(DTO_DangNhap dTO_DangNhap)
+        {
+            return dataTableToDTO_DangNhap(dalDangNhap.getSelectUser(dTO_DangNhap));
         }
     }
 }

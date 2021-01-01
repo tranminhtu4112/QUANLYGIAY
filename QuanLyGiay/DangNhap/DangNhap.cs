@@ -53,10 +53,11 @@ namespace GUI_QuanLyGiay
             DTO_DangNhap dTO_DangNhap = new DTO_DangNhap();
             dTO_DangNhap.userName = txbUserName.Text;
             dTO_DangNhap.password = txbPassword.Text;
-            if (busDangNhap.isUser(dTO_DangNhap))
+            dTO_DangNhap = busDangNhap.getUser(dTO_DangNhap);
+            if (dTO_DangNhap != null)
             {
-                FormMain formMain = new FormMain();
-                formMain.Show();
+                FormMain formMain = new FormMain(dTO_DangNhap);
+                formMain.ShowDialog();
             }
             else
             {

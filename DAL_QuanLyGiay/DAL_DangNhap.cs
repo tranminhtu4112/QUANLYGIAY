@@ -13,13 +13,13 @@ namespace DAL_QuanLyGiay
         public DataTable getSelectUser(DTO_DangNhap dTO_DangNhap) // Lấy user trả về datatable
         {
             String sqlSelect = "SELECT TOP 1 * FROM NHANVIEN WHERE " +
-                                "USERNAME = @username AND PASSWORD = @password";
+                                "USERNAME = @username AND UPASSWORD = @upassword";
             try
             {
                 conn.Open();
                 SqlCommand sqlCommand = new SqlCommand(sqlSelect, conn);
                 sqlCommand.Parameters.AddWithValue("username", dTO_DangNhap.userName);
-                sqlCommand.Parameters.AddWithValue("password", dTO_DangNhap.password);
+                sqlCommand.Parameters.AddWithValue("upassword", dTO_DangNhap.password);
 
                 SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
                 DataTable dataTable = new DataTable();

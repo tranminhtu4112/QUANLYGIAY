@@ -6,6 +6,7 @@ namespace DTO_QuayLyGiay
 {
     public class DTO_DangNhap
     {
+        public String tenNhanVien { get; set; }
         public String userName { get; set; }
         public String password { get; set; }
 
@@ -13,8 +14,9 @@ namespace DTO_QuayLyGiay
         {
 
         }
-        public DTO_DangNhap(String userName, String password)
+        public DTO_DangNhap(String tenNhanVien, String userName, String password)
         {
+            this.tenNhanVien = tenNhanVien;
             this.userName = userName;
             this.password = password;
         }

@@ -42,6 +42,10 @@
             this.button14 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnDangXuat = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.txbChaoNhanVien = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.button13 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
@@ -49,16 +53,15 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
-            this.button8 = new System.Windows.Forms.Button();
-            this.trangChu1 = new GUI_QuanLyGiay.TrangChu();
-            this.qlSanPham1 = new GUI_QuanLyGiay.QLSanPham();
-            this.qlThuongHieu1 = new GUI_QuanLyGiay.QLThuongHieu();
-            this.qlGioiTinh1 = new GUI_QuanLyGiay.GioiTinh.QLGioiTinh();
-            this.qlKhuyenMai1 = new GUI_QuanLyGiay.KhuyenMai.QLKhuyenMai();
+            this.duTru1 = new GUI_QuanLyGiay.DuTru.DuTru();
             this.qlDonDatHang1 = new GUI_QuanLyGiay.DonDatHang.QLDonDatHang();
             this.qlHoaDon1 = new GUI_QuanLyGiay.HoaDon.QLHoaDon();
+            this.qlSanPham1 = new GUI_QuanLyGiay.QLSanPham();
             this.qlThongKe1 = new GUI_QuanLyGiay.ThongKe.QLThongKe();
-            this.duTru1 = new GUI_QuanLyGiay.DuTru.DuTru();
+            this.trangChu1 = new GUI_QuanLyGiay.TrangChu();
+            this.qlGioiTinh1 = new GUI_QuanLyGiay.GioiTinh.QLGioiTinh();
+            this.qlKhuyenMai1 = new GUI_QuanLyGiay.KhuyenMai.QLKhuyenMai();
+            this.qlThuongHieu1 = new GUI_QuanLyGiay.QLThuongHieu();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
@@ -109,6 +112,7 @@
             this.btnThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThongKe.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnThongKe.ForeColor = System.Drawing.Color.White;
+            this.btnThongKe.Image = ((System.Drawing.Image)(resources.GetObject("btnThongKe.Image")));
             this.btnThongKe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThongKe.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnThongKe.Location = new System.Drawing.Point(13, 510);
@@ -136,6 +140,7 @@
             this.btnHoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHoaDon.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnHoaDon.ForeColor = System.Drawing.Color.White;
+            this.btnHoaDon.Image = ((System.Drawing.Image)(resources.GetObject("btnHoaDon.Image")));
             this.btnHoaDon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHoaDon.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnHoaDon.Location = new System.Drawing.Point(14, 442);
@@ -154,6 +159,7 @@
             this.btnDonDatHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDonDatHang.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnDonDatHang.ForeColor = System.Drawing.Color.White;
+            this.btnDonDatHang.Image = ((System.Drawing.Image)(resources.GetObject("btnDonDatHang.Image")));
             this.btnDonDatHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDonDatHang.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnDonDatHang.Location = new System.Drawing.Point(14, 380);
@@ -172,6 +178,7 @@
             this.btnKhuyenMai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKhuyenMai.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnKhuyenMai.ForeColor = System.Drawing.Color.White;
+            this.btnKhuyenMai.Image = ((System.Drawing.Image)(resources.GetObject("btnKhuyenMai.Image")));
             this.btnKhuyenMai.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnKhuyenMai.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnKhuyenMai.Location = new System.Drawing.Point(14, 317);
@@ -179,7 +186,7 @@
             this.btnKhuyenMai.Name = "btnKhuyenMai";
             this.btnKhuyenMai.Size = new System.Drawing.Size(230, 62);
             this.btnKhuyenMai.TabIndex = 4;
-            this.btnKhuyenMai.Text = "     Quản lí khuyến mãi";
+            this.btnKhuyenMai.Text = "         Quản lí khuyến mãi";
             this.btnKhuyenMai.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnKhuyenMai.UseVisualStyleBackColor = true;
             this.btnKhuyenMai.Click += new System.EventHandler(this.btnKhuyenMai_Click);
@@ -210,6 +217,7 @@
             this.btnQLGioiTinh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnQLGioiTinh.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnQLGioiTinh.ForeColor = System.Drawing.Color.White;
+            this.btnQLGioiTinh.Image = ((System.Drawing.Image)(resources.GetObject("btnQLGioiTinh.Image")));
             this.btnQLGioiTinh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnQLGioiTinh.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnQLGioiTinh.Location = new System.Drawing.Point(14, 255);
@@ -217,7 +225,7 @@
             this.btnQLGioiTinh.Name = "btnQLGioiTinh";
             this.btnQLGioiTinh.Size = new System.Drawing.Size(230, 62);
             this.btnQLGioiTinh.TabIndex = 4;
-            this.btnQLGioiTinh.Text = "Quản lý giới tính";
+            this.btnQLGioiTinh.Text = "       Quản lý giới tính";
             this.btnQLGioiTinh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnQLGioiTinh.UseVisualStyleBackColor = true;
             this.btnQLGioiTinh.Click += new System.EventHandler(this.btnQLGioiTinh_Click);
@@ -228,6 +236,7 @@
             this.btnQLThuongHieu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnQLThuongHieu.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnQLThuongHieu.ForeColor = System.Drawing.Color.White;
+            this.btnQLThuongHieu.Image = ((System.Drawing.Image)(resources.GetObject("btnQLThuongHieu.Image")));
             this.btnQLThuongHieu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnQLThuongHieu.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnQLThuongHieu.Location = new System.Drawing.Point(14, 193);
@@ -280,6 +289,10 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
+            this.panel2.Controls.Add(this.btnDangXuat);
+            this.panel2.Controls.Add(this.panel3);
+            this.panel2.Controls.Add(this.txbChaoNhanVien);
+            this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.button13);
             this.panel2.Controls.Add(this.button11);
@@ -294,18 +307,62 @@
             this.panel2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseMove);
             this.panel2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseUp);
             // 
+            // btnDangXuat
+            // 
+            this.btnDangXuat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDangXuat.FlatAppearance.BorderSize = 0;
+            this.btnDangXuat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnDangXuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDangXuat.Image = ((System.Drawing.Image)(resources.GetObject("btnDangXuat.Image")));
+            this.btnDangXuat.Location = new System.Drawing.Point(148, 7);
+            this.btnDangXuat.Name = "btnDangXuat";
+            this.btnDangXuat.Size = new System.Drawing.Size(53, 47);
+            this.btnDangXuat.TabIndex = 7;
+            this.btnDangXuat.UseVisualStyleBackColor = true;
+            this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Location = new System.Drawing.Point(203, -14);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(5, 78);
+            this.panel3.TabIndex = 6;
+            // 
+            // txbChaoNhanVien
+            // 
+            this.txbChaoNhanVien.AutoSize = true;
+            this.txbChaoNhanVien.Font = new System.Drawing.Font("Segoe UI Emoji", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbChaoNhanVien.ForeColor = System.Drawing.Color.White;
+            this.txbChaoNhanVien.Location = new System.Drawing.Point(47, 14);
+            this.txbChaoNhanVien.Name = "txbChaoNhanVien";
+            this.txbChaoNhanVien.Size = new System.Drawing.Size(36, 30);
+            this.txbChaoNhanVien.TabIndex = 5;
+            this.txbChaoNhanVien.Text = "Tú";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(7, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(46, 21);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Chào";
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.Transparent;
             this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label4.Location = new System.Drawing.Point(168, 9);
+            this.label4.Location = new System.Drawing.Point(277, 9);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(506, 38);
+            this.label4.Size = new System.Drawing.Size(371, 38);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Hệ Thống Quản Lý Giày Sneaker";
+            this.label4.Text = "Hệ Thống Quản Lý Giày";
             // 
             // button13
             // 
@@ -371,109 +428,91 @@
             this.fileSystemWatcher1.EnableRaisingEvents = true;
             this.fileSystemWatcher1.SynchronizingObject = this;
             // 
-            // button8
+            // duTru1
             // 
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button8.Location = new System.Drawing.Point(289, 231);
-            this.button8.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(230, 62);
-            this.button8.TabIndex = 4;
-            this.button8.Text = "       Home";
-            this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // trangChu1
-            // 
-            this.trangChu1.Location = new System.Drawing.Point(244, 70);
-            this.trangChu1.Name = "trangChu1";
-            this.trangChu1.Size = new System.Drawing.Size(953, 603);
-            this.trangChu1.TabIndex = 5;
-            // 
-            // qlSanPham1
-            // 
-            this.qlSanPham1.Location = new System.Drawing.Point(244, 71);
-            this.qlSanPham1.Name = "qlSanPham1";
-            this.qlSanPham1.Size = new System.Drawing.Size(953, 603);
-            this.qlSanPham1.TabIndex = 6;
-            // 
-            // qlThuongHieu1
-            // 
-            this.qlThuongHieu1.Location = new System.Drawing.Point(244, 71);
-            this.qlThuongHieu1.Name = "qlThuongHieu1";
-            this.qlThuongHieu1.Size = new System.Drawing.Size(953, 603);
-            this.qlThuongHieu1.TabIndex = 7;
-            // 
-            // qlGioiTinh1
-            // 
-            this.qlGioiTinh1.Location = new System.Drawing.Point(244, 70);
-            this.qlGioiTinh1.Name = "qlGioiTinh1";
-            this.qlGioiTinh1.Size = new System.Drawing.Size(953, 603);
-            this.qlGioiTinh1.TabIndex = 8;
-            // 
-            // qlKhuyenMai1
-            // 
-            this.qlKhuyenMai1.Location = new System.Drawing.Point(244, 70);
-            this.qlKhuyenMai1.Name = "qlKhuyenMai1";
-            this.qlKhuyenMai1.Size = new System.Drawing.Size(953, 603);
-            this.qlKhuyenMai1.TabIndex = 9;
+            this.duTru1.Location = new System.Drawing.Point(244, 70);
+            this.duTru1.Name = "duTru1";
+            this.duTru1.Size = new System.Drawing.Size(953, 603);
+            this.duTru1.TabIndex = 2;
             // 
             // qlDonDatHang1
             // 
             this.qlDonDatHang1.Location = new System.Drawing.Point(244, 70);
             this.qlDonDatHang1.Name = "qlDonDatHang1";
             this.qlDonDatHang1.Size = new System.Drawing.Size(953, 603);
-            this.qlDonDatHang1.TabIndex = 10;
+            this.qlDonDatHang1.TabIndex = 3;
             // 
             // qlHoaDon1
             // 
             this.qlHoaDon1.Location = new System.Drawing.Point(244, 70);
             this.qlHoaDon1.Name = "qlHoaDon1";
             this.qlHoaDon1.Size = new System.Drawing.Size(953, 603);
-            this.qlHoaDon1.TabIndex = 11;
+            this.qlHoaDon1.TabIndex = 5;
+            // 
+            // qlSanPham1
+            // 
+            this.qlSanPham1.Location = new System.Drawing.Point(244, 70);
+            this.qlSanPham1.Name = "qlSanPham1";
+            this.qlSanPham1.Size = new System.Drawing.Size(953, 603);
+            this.qlSanPham1.TabIndex = 7;
             // 
             // qlThongKe1
             // 
             this.qlThongKe1.Location = new System.Drawing.Point(244, 70);
             this.qlThongKe1.Name = "qlThongKe1";
             this.qlThongKe1.Size = new System.Drawing.Size(953, 603);
-            this.qlThongKe1.TabIndex = 12;
+            this.qlThongKe1.TabIndex = 8;
             // 
-            // duTru1
+            // trangChu1
             // 
-            this.duTru1.Location = new System.Drawing.Point(244, 70);
-            this.duTru1.Name = "duTru1";
-            this.duTru1.Size = new System.Drawing.Size(953, 603);
-            this.duTru1.TabIndex = 13;
+            this.trangChu1.Location = new System.Drawing.Point(244, 70);
+            this.trangChu1.Name = "trangChu1";
+            this.trangChu1.Size = new System.Drawing.Size(953, 603);
+            this.trangChu1.TabIndex = 10;
+            // 
+            // qlGioiTinh1
+            // 
+            this.qlGioiTinh1.Location = new System.Drawing.Point(244, 70);
+            this.qlGioiTinh1.Name = "qlGioiTinh1";
+            this.qlGioiTinh1.Size = new System.Drawing.Size(953, 603);
+            this.qlGioiTinh1.TabIndex = 11;
+            // 
+            // qlKhuyenMai1
+            // 
+            this.qlKhuyenMai1.Location = new System.Drawing.Point(244, 70);
+            this.qlKhuyenMai1.Name = "qlKhuyenMai1";
+            this.qlKhuyenMai1.Size = new System.Drawing.Size(953, 603);
+            this.qlKhuyenMai1.TabIndex = 12;
+            // 
+            // qlThuongHieu1
+            // 
+            this.qlThuongHieu1.Location = new System.Drawing.Point(244, 70);
+            this.qlThuongHieu1.Name = "qlThuongHieu1";
+            this.qlThuongHieu1.Size = new System.Drawing.Size(953, 603);
+            this.qlThuongHieu1.TabIndex = 13;
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1197, 673);
-            this.Controls.Add(this.duTru1);
-            this.Controls.Add(this.qlThongKe1);
-            this.Controls.Add(this.qlHoaDon1);
-            this.Controls.Add(this.qlDonDatHang1);
+            this.Controls.Add(this.qlThuongHieu1);
             this.Controls.Add(this.qlKhuyenMai1);
             this.Controls.Add(this.qlGioiTinh1);
-            this.Controls.Add(this.qlThuongHieu1);
-            this.Controls.Add(this.qlSanPham1);
             this.Controls.Add(this.trangChu1);
+            this.Controls.Add(this.qlThongKe1);
+            this.Controls.Add(this.qlSanPham1);
+            this.Controls.Add(this.qlHoaDon1);
+            this.Controls.Add(this.qlDonDatHang1);
+            this.Controls.Add(this.duTru1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button8);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.FormMain_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -502,18 +541,21 @@
         private System.IO.FileSystemWatcher fileSystemWatcher1;
         private System.ComponentModel.BackgroundWorker backgroundWorker2;
         public System.Windows.Forms.Button button1;
-        public System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button btnThongKe;
         private System.Windows.Forms.Button btnDuTru;
-        private GUI_QuanLyGiay.QLSanPham qlSanPham1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label txbChaoNhanVien;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnDangXuat;
         private GUI_QuanLyGiay.TrangChu trangChu1;
-        private GUI_QuanLyGiay.QLThuongHieu qlThuongHieu1;
-        private GUI_QuanLyGiay.GioiTinh.QLGioiTinh qlGioiTinh1;
-        private GUI_QuanLyGiay.KhuyenMai.QLKhuyenMai qlKhuyenMai1;
-        private GUI_QuanLyGiay.DonDatHang.QLDonDatHang qlDonDatHang1;
-        private GUI_QuanLyGiay.HoaDon.QLHoaDon qlHoaDon1;
         private GUI_QuanLyGiay.ThongKe.QLThongKe qlThongKe1;
+        private GUI_QuanLyGiay.QLSanPham qlSanPham1;
+        private GUI_QuanLyGiay.HoaDon.QLHoaDon qlHoaDon1;
+        private GUI_QuanLyGiay.DonDatHang.QLDonDatHang qlDonDatHang1;
         private GUI_QuanLyGiay.DuTru.DuTru duTru1;
+        private GUI_QuanLyGiay.QLThuongHieu qlThuongHieu1;
+        private GUI_QuanLyGiay.KhuyenMai.QLKhuyenMai qlKhuyenMai1;
+        private GUI_QuanLyGiay.GioiTinh.QLGioiTinh qlGioiTinh1;
     }
 }
 

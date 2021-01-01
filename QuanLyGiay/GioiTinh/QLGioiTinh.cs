@@ -12,14 +12,14 @@ namespace GUI_QuanLyGiay.GioiTinh
 {
     public partial class QLGioiTinh : UserControl
     {
-        BUS_GioiTinh busGioiTinh = new BUS_GioiTinh();
+       // BUS_GioiTinh busGioiTinh = new BUS_GioiTinh();
         public QLGioiTinh()
         {
             InitializeComponent();
-            loadDataGioiTinh();
+        //    loadDataGioiTinh();
         }
 
-        public void loadDataGioiTinh()
+        /*public void loadDataGioiTinh()
         {
             lvwGioiTinh.Clear();
             lvwGioiTinh.Columns.Add("STT", 100);
@@ -38,20 +38,20 @@ namespace GUI_QuanLyGiay.GioiTinh
                 item.SubItems.Add(row[3].ToString());
                 lvwGioiTinh.Items.Add(item);
             }
-        }
+        }*/
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            Tool_ThemGioiTinh toolThemGioiTinh = new Tool_ThemGioiTinh();
+           /* Tool_ThemGioiTinh toolThemGioiTinh = new Tool_ThemGioiTinh();
             toolThemGioiTinh.ShowDialog();
             if (toolThemGioiTinh.isClickThem)
             {
                 loadDataGioiTinh();
-            }
+            }*/
         }
         private void btnSua_Click(object sender, EventArgs e)
         {
-            if (lvwGioiTinh.SelectedItems.Count > 0)
+          /*  if (lvwGioiTinh.SelectedItems.Count > 0)
             {
                 ListViewItem item = lvwGioiTinh.SelectedItems[0];
                 DTO_GioiTinh dtoGioiTinh = new DTO_GioiTinh();
@@ -65,11 +65,11 @@ namespace GUI_QuanLyGiay.GioiTinh
                 {
                     loadDataGioiTinh();
                 }
-            }
+            }*/
         }
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            if (lvwGioiTinh.SelectedItems.Count > 0)
+            /*if (lvwGioiTinh.SelectedItems.Count > 0)
             {
                 TBXoa tbXoa = new TBXoa();
                 tbXoa.ShowDialog();
@@ -88,7 +88,7 @@ namespace GUI_QuanLyGiay.GioiTinh
                         MessageBox.Show("Lỗi phần mềm!");
                     }
                 }
-            }
+            }*/
         }
     }
 }
