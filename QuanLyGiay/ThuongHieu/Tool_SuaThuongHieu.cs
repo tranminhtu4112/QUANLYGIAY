@@ -80,17 +80,6 @@ namespace GUI_QuanLyGiay
                 MessageBox.Show("Lỗi phần mềm!");
             }
         }
-
-
-
-
-
-
-
-
-
-
-
         private void Tool_SuaThuongHieu_MouseDown(object sender, MouseEventArgs e)
         {
             mov = 1;

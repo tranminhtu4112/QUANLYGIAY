@@ -9,13 +9,14 @@ namespace DAL_QuanLyGiay
 {
     public class DAL_DangNhap
     {
-        private SqlConnection conn = new DBConnection().getConnection();
+        private SqlConnection conn;
         public DataTable getSelectUser(DTO_DangNhap dTO_DangNhap) // Lấy user trả về datatable
         {
             String sqlSelect = "SELECT TOP 1 * FROM NHANVIEN WHERE " +
                                 "USERNAME = @username AND UPASSWORD = @upassword";
             try
             {
+                conn = new DBConnection().getConnection();
                 conn.Open();
                 SqlCommand sqlCommand = new SqlCommand(sqlSelect, conn);
                 sqlCommand.Parameters.AddWithValue("username", dTO_DangNhap.userName);

@@ -40,6 +40,12 @@
     <Compile Update="SanPham\QLSanPham.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="SanPham\Tool_SuaGiay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SanPham\Tool_ThemGiay.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="ThongKe\QLThongKe.cs">
       <SubType>UserControl</SubType>
     </Compile>

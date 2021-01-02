@@ -9,7 +9,7 @@ namespace DAL_QuanLyGiay
 {
     public class DAL_Giay
     {
-        private SqlConnection conn = new DBConnection().getConnection();
+        private SqlConnection conn;
         private DAL_Common dalCommon = new DAL_Common();
         public DataTable getAllGiay()
         {
@@ -23,6 +23,7 @@ namespace DAL_QuanLyGiay
         "VALUES(@MAGIAY, @TENGIAY, @MAGIOITINH, @MATHUONGHIEU, @MOTA, @HINHANH, @MAKHUYENMAI, @SOLUONG, @GIA)";
             try
             {
+                conn = new DBConnection().getConnection();
                 conn.Open();
                 SqlCommand sqlCommand = new SqlCommand(SQLInsert, conn);
                 sqlCommand.Parameters.AddWithValue("MAGIAY", dtoGiay.maGiay);
@@ -48,10 +49,11 @@ namespace DAL_QuanLyGiay
         {
             String SQLInsert = "UPDATE GIAY " +
    "SET TENGIAY=@TENGIAY,MAGIOITINH=@MAGIOITINH,MATHUONGHIEU=@MATHUONGHIEU,MOTA=@MOTA, " +
-   "HINHANH=@HINHANH,MAKHUYENMAI=@MAKHUYENMAI,SOLUONG=@SOLUONG,GIA=@GIA" +
+   "HINHANH=@HINHANH,MAKHUYENMAI=@MAKHUYENMAI,SOLUONG=@SOLUONG,GIA=@GIA " +
                                 "WHERE MAGIAY = @MAGIAY";
             try
             {
+                conn = new DBConnection().getConnection();
                 conn.Open();
                 SqlCommand sqlCommand = new SqlCommand(SQLInsert, conn);
                 sqlCommand.Parameters.AddWithValue("MAGIAY", dtoGiay.maGiay);
@@ -78,6 +80,7 @@ namespace DAL_QuanLyGiay
             String SQLDelete = "DELETE FROM GIAY WHERE MAGIAY = @MAGIAY";
             try
             {
+                conn = new DBConnection().getConnection();
                 conn.Open();
                 SqlCommand sqlCommand = new SqlCommand(SQLDelete, conn);
                 sqlCommand.Parameters.AddWithValue("MAGIAY", maGiay);
@@ -90,6 +93,15 @@ namespace DAL_QuanLyGiay
                 e.ToString();
                 return false;
             }
+        }
+        public DataTable getViewDetailGiay()
+        {
+            String SQLSelect = "SELECT GIAY.MAGIAY,GIAY.TENGIAY,GIOITINH.TENGIOITINH,THUONGHIEU.TENTHUONGHIEU,GIAY.MOTA,GIAY.HINHANH," +
+                                "KHUYENMAI.PHANTRAMGIAMGIA,GIAY.SOLUONG,GIAY.GIA " +
+                                "FROM GIAY,GIOITINH,THUONGHIEU,KHUYENMAI " +
+                                "WHERE GIAY.MAGIOITINH = GIOITINH.MAGIOITINH AND GIAY.MATHUONGHIEU = THUONGHIEU.MATHUONGHIEU " +
+                                "AND GIAY.MAKHUYENMAI = KHUYENMAI.MAKHUYENMAI";
+            return dalCommon.getSelect(SQLSelect);
         }
     }
 }

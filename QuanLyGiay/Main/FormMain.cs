@@ -117,8 +117,8 @@ namespace QuanLyGiay
 
         private void FormMain_Load(object sender, EventArgs e)
         {
-            String[] name = this.dtoDangNhap.tenNhanVien.ToString().Split(" ");
-            txbChaoNhanVien.Text = name[name.Length - 1].ToString();
+      /*      String[] name = this.dtoDangNhap.tenNhanVien.ToString().Split(" ");
+            txbChaoNhanVien.Text = name[name.Length - 1].ToString();*/
         }
 
         private void btnDangXuat_Click(object sender, EventArgs e)

@@ -40,7 +40,7 @@ namespace GUI_QuanLyGiay.KhuyenMai
             // lvwKhuyenMai
             // 
             this.lvwKhuyenMai.HideSelection = false;
-            this.lvwKhuyenMai.Location = new System.Drawing.Point(40, 119);
+            this.lvwKhuyenMai.Location = new System.Drawing.Point(60, 123);
             this.lvwKhuyenMai.Name = "lvwKhuyenMai";
             this.lvwKhuyenMai.Size = new System.Drawing.Size(728, 432);
             this.lvwKhuyenMai.TabIndex = 14;
@@ -56,7 +56,7 @@ namespace GUI_QuanLyGiay.KhuyenMai
             this.btnSua.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnSua.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.Image")));
             this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSua.Location = new System.Drawing.Point(787, 284);
+            this.btnSua.Location = new System.Drawing.Point(807, 291);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(125, 41);
             this.btnSua.TabIndex = 11;
@@ -75,7 +75,7 @@ namespace GUI_QuanLyGiay.KhuyenMai
             this.btnXoa.ForeColor = System.Drawing.Color.White;
             this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
             this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.Location = new System.Drawing.Point(787, 212);
+            this.btnXoa.Location = new System.Drawing.Point(807, 219);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(125, 41);
             this.btnXoa.TabIndex = 12;
@@ -94,7 +94,7 @@ namespace GUI_QuanLyGiay.KhuyenMai
             this.btnThem.ForeColor = System.Drawing.Color.White;
             this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
             this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.Location = new System.Drawing.Point(787, 144);
+            this.btnThem.Location = new System.Drawing.Point(807, 151);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(125, 41);
             this.btnThem.TabIndex = 13;
@@ -106,7 +106,7 @@ namespace GUI_QuanLyGiay.KhuyenMai
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Lucida Fax", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(325, 26);
+            this.label2.Location = new System.Drawing.Point(323, 26);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(305, 32);
             this.label2.TabIndex = 16;

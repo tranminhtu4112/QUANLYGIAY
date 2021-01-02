@@ -40,7 +40,7 @@ namespace GUI_QuanLyGiay.GioiTinh
             // lvwGioiTinh
             // 
             this.lvwGioiTinh.HideSelection = false;
-            this.lvwGioiTinh.Location = new System.Drawing.Point(40, 110);
+            this.lvwGioiTinh.Location = new System.Drawing.Point(60, 123);
             this.lvwGioiTinh.Name = "lvwGioiTinh";
             this.lvwGioiTinh.Size = new System.Drawing.Size(728, 432);
             this.lvwGioiTinh.TabIndex = 9;
@@ -56,7 +56,7 @@ namespace GUI_QuanLyGiay.GioiTinh
             this.btnSua.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnSua.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.Image")));
             this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSua.Location = new System.Drawing.Point(787, 275);
+            this.btnSua.Location = new System.Drawing.Point(807, 291);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(125, 41);
             this.btnSua.TabIndex = 6;
@@ -75,7 +75,7 @@ namespace GUI_QuanLyGiay.GioiTinh
             this.btnXoa.ForeColor = System.Drawing.Color.White;
             this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
             this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.Location = new System.Drawing.Point(787, 203);
+            this.btnXoa.Location = new System.Drawing.Point(807, 219);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(125, 41);
             this.btnXoa.TabIndex = 7;
@@ -94,7 +94,7 @@ namespace GUI_QuanLyGiay.GioiTinh
             this.btnThem.ForeColor = System.Drawing.Color.White;
             this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
             this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.Location = new System.Drawing.Point(787, 135);
+            this.btnThem.Location = new System.Drawing.Point(807, 151);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(125, 41);
             this.btnThem.TabIndex = 8;
@@ -106,7 +106,7 @@ namespace GUI_QuanLyGiay.GioiTinh
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Lucida Fax", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(331, 35);
+            this.label2.Location = new System.Drawing.Point(323, 26);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(257, 32);
             this.label2.TabIndex = 11;
@@ -121,7 +121,7 @@ namespace GUI_QuanLyGiay.GioiTinh
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnThem);
-            this.Location = new System.Drawing.Point(244, 70);
+            this.Location = new System.Drawing.Point(60, 123);
             this.Name = "QLGioiTinh";
             this.Size = new System.Drawing.Size(953, 603);
             this.ResumeLayout(false);

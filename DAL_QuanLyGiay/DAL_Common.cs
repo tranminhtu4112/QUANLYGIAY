@@ -8,12 +8,13 @@ namespace DAL_QuanLyGiay
 {
     public class DAL_Common
     {
-        private SqlConnection conn = new DBConnection().getConnection();
+        private SqlConnection conn;
         public DataTable getSelect(String sqlSelect)
         {
             DataTable dataTable = new DataTable();
             try
             {
+                conn = new DBConnection().getConnection();
                 conn.Open();
                 SqlDataAdapter db = new SqlDataAdapter(sqlSelect, conn);
                 db.Fill(dataTable);

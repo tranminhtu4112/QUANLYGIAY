@@ -9,7 +9,7 @@ namespace DAL_QuanLyGiay
 {
     public class DAL_ThuongHieu
     {
-        private SqlConnection conn = new DBConnection().getConnection();
+        private SqlConnection conn;
         DAL_Common dalCommon = new DAL_Common();
         public DataTable getAllThuongHieu()
         {
@@ -22,6 +22,7 @@ namespace DAL_QuanLyGiay
                         "VALUES(@MATHUONGHIEU, @TENTHUONGHIEU, @MOTA, @HINHANH)";
             try
             {
+                conn = new DBConnection().getConnection();
                 conn.Open();
                 SqlCommand sqlCommand = new SqlCommand(SQLInsert, conn);
                 sqlCommand.Parameters.AddWithValue("MATHUONGHIEU", dtoThuongHieu.maThuongHieu);
@@ -45,6 +46,7 @@ namespace DAL_QuanLyGiay
                                 "WHERE MATHUONGHIEU = @MATHUONGHIEU";
             try
             {
+                conn = new DBConnection().getConnection();
                 conn.Open();
                 SqlCommand sqlCommand = new SqlCommand(SQLUpdate, conn);
                 sqlCommand.Parameters.AddWithValue("TENTHUONGHIEU", dtoThuongHieu.tenThuongHieu);
@@ -66,6 +68,7 @@ namespace DAL_QuanLyGiay
             String SQLDelete = "DELETE FROM THUONGHIEU WHERE MATHUONGHIEU = @MATHUONGHIEU";
             try
             {
+                conn = new DBConnection().getConnection();
                 conn.Open();
                 SqlCommand sqlCommand = new SqlCommand(SQLDelete, conn);
                 sqlCommand.Parameters.AddWithValue("MATHUONGHIEU", maThuongHieu);

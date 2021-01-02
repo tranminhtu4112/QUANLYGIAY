@@ -26,5 +26,9 @@ namespace BUS_QuanLyGiay
         {
             return dalGiay.deleteGiay(maGiay);
         }
+        public DataTable getViewDetailGiay()
+        {
+            return dalGiay.getViewDetailGiay();
+        }
     }
 }
