@@ -14,13 +14,13 @@ namespace GUI_QuanLyGiay
 {
     public partial class QLThuongHieu : UserControl
     {
-       // BUS_ThuongHieu busThuongHieu = new BUS_ThuongHieu();
+        BUS_ThuongHieu busThuongHieu = new BUS_ThuongHieu();
         public QLThuongHieu()
         {
             InitializeComponent();
-            //loadDatathuongHieu();
+            loadDatathuongHieu();
         }
-        /*public void loadDatathuongHieu()
+        public void loadDatathuongHieu()
         {
             lvwThuongHieu.Clear();
             lvwThuongHieu.Columns.Add("Hình ảnh", 110);
@@ -52,16 +52,16 @@ namespace GUI_QuanLyGiay
 
                 lvwThuongHieu.Items.Add(item);
             }
-        }*/
+        }
 
         private void btnLamMoi_Click(object sender, EventArgs e)
         {
-           // loadDatathuongHieu();
+            loadDatathuongHieu();
         }
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            /*if (lvwThuongHieu.SelectedItems.Count > 0)
+            if (lvwThuongHieu.SelectedItems.Count > 0)
             {
                 ListViewItem item = lvwThuongHieu.SelectedItems[0];
                 DTO_ThuongHieu dtoThuongHieu = new DTO_ThuongHieu();
@@ -75,21 +75,21 @@ namespace GUI_QuanLyGiay
                 {
                     loadDatathuongHieu();
                 }
-            }*/
+            }
         }
 
         private void btnThem_Click(object sender, EventArgs e)
-        {/*
+        {
             Tool_ThemThuongHieu toolThemThuongHieu = new Tool_ThemThuongHieu();
             toolThemThuongHieu.ShowDialog();
             if (toolThemThuongHieu.isClickThem)
             {
                 loadDatathuongHieu();
-            }*/
+            }
         }
         private void btnXoa_Click(object sender, EventArgs e)
         {
-           /* if (lvwThuongHieu.SelectedItems.Count > 0)
+            if (lvwThuongHieu.SelectedItems.Count > 0)
             {
                 TBXoa tbXoa = new TBXoa();
                 tbXoa.ShowDialog();
@@ -108,7 +108,7 @@ namespace GUI_QuanLyGiay
                         MessageBox.Show("Lỗi phần mềm!");
                     }
                 }
-            }*/
+            }
         }
     }
 }

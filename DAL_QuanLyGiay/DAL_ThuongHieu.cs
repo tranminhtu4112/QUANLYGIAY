@@ -16,6 +16,10 @@ namespace DAL_QuanLyGiay
             String SQLSelect = "SELECT * FROM THUONGHIEU";
             return dalCommon.getSelect(SQLSelect);
         }
+        public DataTable getAllThuongHieu(String sqlGetAll)
+        {
+            return dalCommon.getSelect(sqlGetAll);
+        }
         public bool addThuongHieu(DTO_ThuongHieu dtoThuongHieu)
         {
             String SQLInsert = "INSERT INTO THUONGHIEU (MATHUONGHIEU, TENTHUONGHIEU, MOTA, HINHANH) " +

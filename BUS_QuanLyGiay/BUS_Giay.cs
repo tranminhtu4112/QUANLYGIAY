@@ -30,5 +30,9 @@ namespace BUS_QuanLyGiay
         {
             return dalGiay.getViewDetailGiay();
         }
+        public DataTable getSapXepTheo(String StringOrderBy)
+        {
+            return dalGiay.getSapXepTheo(StringOrderBy);
+        }
     }
 }

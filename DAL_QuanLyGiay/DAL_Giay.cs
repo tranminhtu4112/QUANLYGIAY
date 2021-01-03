@@ -103,5 +103,16 @@ namespace DAL_QuanLyGiay
                                 "AND GIAY.MAKHUYENMAI = KHUYENMAI.MAKHUYENMAI";
             return dalCommon.getSelect(SQLSelect);
         }
+        public DataTable getSapXepTheo(String StringOrderBy)
+        {
+            String SQLSort = "SELECT GIAY.MAGIAY,GIAY.TENGIAY,GIOITINH.TENGIOITINH,THUONGHIEU.TENTHUONGHIEU,GIAY.MOTA,GIAY.HINHANH," +
+                                "KHUYENMAI.PHANTRAMGIAMGIA,GIAY.SOLUONG,GIAY.GIA " +
+                                "FROM GIAY,GIOITINH,THUONGHIEU,KHUYENMAI " +
+                                "WHERE GIAY.MAGIOITINH = GIOITINH.MAGIOITINH AND GIAY.MATHUONGHIEU = THUONGHIEU.MATHUONGHIEU " +
+                                "AND GIAY.MAKHUYENMAI = KHUYENMAI.MAKHUYENMAI " +
+                                "ORDER BY " + StringOrderBy;
+
+            return dalCommon.getSelect(SQLSort);
+        }
     }
 }

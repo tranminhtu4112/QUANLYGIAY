@@ -22,5 +22,10 @@ namespace DTO_QuayLyGiay
             this.moTa = moTa;
             this.hinhAnh = hinhAnh;
         }
+        public DTO_ThuongHieu(String maThuongHieu, String tenThuongHieu)
+        {
+            this.maThuongHieu = maThuongHieu;
+            this.tenThuongHieu = tenThuongHieu;
+        }
     }
 }

@@ -36,8 +36,12 @@ namespace GUI_QuanLyGiay
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXuatExcel = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbbSapXep = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cbbLocThuongHieu = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnLamMoi = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lvwGiay
@@ -124,18 +128,20 @@ namespace GUI_QuanLyGiay
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(36, 84);
+            this.textBox1.Location = new System.Drawing.Point(706, 63);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(172, 23);
             this.textBox1.TabIndex = 2;
             // 
-            // comboBox1
+            // cbbSapXep
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(36, 124);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(172, 23);
-            this.comboBox1.TabIndex = 3;
+            this.cbbSapXep.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbSapXep.FormattingEnabled = true;
+            this.cbbSapXep.Location = new System.Drawing.Point(128, 124);
+            this.cbbSapXep.Name = "cbbSapXep";
+            this.cbbSapXep.Size = new System.Drawing.Size(172, 23);
+            this.cbbSapXep.TabIndex = 3;
+            this.cbbSapXep.SelectedIndexChanged += new System.EventHandler(this.cbbSapXep_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -147,16 +153,69 @@ namespace GUI_QuanLyGiay
             this.label1.TabIndex = 4;
             this.label1.Text = "Quản lý sản phẩm";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(36, 126);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(59, 16);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Sắp xếp";
+            // 
+            // cbbLocThuongHieu
+            // 
+            this.cbbLocThuongHieu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbLocThuongHieu.FormattingEnabled = true;
+            this.cbbLocThuongHieu.Location = new System.Drawing.Point(128, 80);
+            this.cbbLocThuongHieu.Name = "cbbLocThuongHieu";
+            this.cbbLocThuongHieu.Size = new System.Drawing.Size(172, 23);
+            this.cbbLocThuongHieu.TabIndex = 3;
+            this.cbbLocThuongHieu.SelectedIndexChanged += new System.EventHandler(this.cbbLocThuongHieu_SelectedIndexChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(36, 82);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(91, 16);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Thương hiệu";
+            // 
+            // btnLamMoi
+            // 
+            this.btnLamMoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(121)))), ((int)(((byte)(255)))));
+            this.btnLamMoi.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLamMoi.FlatAppearance.BorderSize = 0;
+            this.btnLamMoi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(83)))), ((int)(((byte)(255)))));
+            this.btnLamMoi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLamMoi.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnLamMoi.ForeColor = System.Drawing.Color.White;
+            this.btnLamMoi.Image = ((System.Drawing.Image)(resources.GetObject("btnLamMoi.Image")));
+            this.btnLamMoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLamMoi.Location = new System.Drawing.Point(36, 17);
+            this.btnLamMoi.Name = "btnLamMoi";
+            this.btnLamMoi.Size = new System.Drawing.Size(100, 32);
+            this.btnLamMoi.TabIndex = 1;
+            this.btnLamMoi.Text = "       Làm mới";
+            this.btnLamMoi.UseVisualStyleBackColor = false;
+            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
+            // 
             // QLSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbbLocThuongHieu);
+            this.Controls.Add(this.cbbSapXep);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnXuatExcel);
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnXoa);
+            this.Controls.Add(this.btnLamMoi);
             this.Controls.Add(this.btnThem);
             this.Controls.Add(this.lvwGiay);
             this.Location = new System.Drawing.Point(244, 70);
@@ -176,7 +235,11 @@ namespace GUI_QuanLyGiay
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnXuatExcel;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbbSapXep;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox cbbLocThuongHieu;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnLamMoi;
     }
 }

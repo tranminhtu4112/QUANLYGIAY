@@ -26,5 +26,14 @@ namespace BUS_QuanLyGiay
         {
             return dalThuongHieu.deleteThuongHieu(maThuongHieu);
         }
+        public DataTable getThuongHieuSearch(String searchBy)
+        {
+            String SQLsearch = "SELECT GIAY.MAGIAY,GIAY.TENGIAY,GIOITINH.TENGIOITINH,THUONGHIEU.TENTHUONGHIEU,GIAY.MOTA,GIAY.HINHANH," +
+                                "KHUYENMAI.PHANTRAMGIAMGIA,GIAY.SOLUONG,GIAY.GIA " +
+                                "FROM GIAY,GIOITINH,THUONGHIEU,KHUYENMAI " +
+                                "WHERE GIAY.MAGIOITINH = GIOITINH.MAGIOITINH AND GIAY.MATHUONGHIEU = THUONGHIEU.MATHUONGHIEU " +
+                                "AND GIAY.MAKHUYENMAI = KHUYENMAI.MAKHUYENMAI AND THUONGHIEU.MATHUONGHIEU = " + searchBy;
+            return dalThuongHieu.getAllThuongHieu(SQLsearch);
+        }
     }
 }

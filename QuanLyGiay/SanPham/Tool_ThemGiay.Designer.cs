@@ -46,6 +46,7 @@ namespace GUI_QuanLyGiay.SanPham
             this.btnThem = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.btnChonAnh = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -54,7 +55,6 @@ namespace GUI_QuanLyGiay.SanPham
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbHinh)).BeginInit();
             this.SuspendLayout();
@@ -115,6 +115,7 @@ namespace GUI_QuanLyGiay.SanPham
             // 
             // cbbKhuyenMai
             // 
+            this.cbbKhuyenMai.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbKhuyenMai.FormattingEnabled = true;
             this.cbbKhuyenMai.Location = new System.Drawing.Point(512, 168);
             this.cbbKhuyenMai.Name = "cbbKhuyenMai";
@@ -123,6 +124,7 @@ namespace GUI_QuanLyGiay.SanPham
             // 
             // cbbThuongHieu
             // 
+            this.cbbThuongHieu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbThuongHieu.FormattingEnabled = true;
             this.cbbThuongHieu.Location = new System.Drawing.Point(512, 118);
             this.cbbThuongHieu.Name = "cbbThuongHieu";
@@ -131,6 +133,7 @@ namespace GUI_QuanLyGiay.SanPham
             // 
             // cbbGioiTinh
             // 
+            this.cbbGioiTinh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbGioiTinh.FormattingEnabled = true;
             this.cbbGioiTinh.Location = new System.Drawing.Point(512, 67);
             this.cbbGioiTinh.Name = "cbbGioiTinh";
@@ -238,6 +241,17 @@ namespace GUI_QuanLyGiay.SanPham
             this.btnChonAnh.UseVisualStyleBackColor = false;
             this.btnChonAnh.Click += new System.EventHandler(this.btnChonAnh_Click);
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.White;
+            this.label11.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label11.Location = new System.Drawing.Point(306, 239);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(36, 16);
+            this.label11.TabIndex = 9;
+            this.label11.Text = "(Đôi)";
+            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -325,17 +339,6 @@ namespace GUI_QuanLyGiay.SanPham
             this.label4.Size = new System.Drawing.Size(64, 16);
             this.label4.TabIndex = 8;
             this.label4.Text = "Giới tính";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.White;
-            this.label11.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label11.Location = new System.Drawing.Point(306, 239);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(36, 16);
-            this.label11.TabIndex = 9;
-            this.label11.Text = "(Đôi)";
             // 
             // Tool_ThemGiay
             // 

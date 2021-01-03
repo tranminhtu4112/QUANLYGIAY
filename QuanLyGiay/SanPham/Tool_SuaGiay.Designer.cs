@@ -74,7 +74,7 @@ namespace GUI_QuanLyGiay.SanPham
             this.btnHuy.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHuy.FlatAppearance.BorderSize = 0;
             this.btnHuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHuy.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnHuy.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnHuy.Location = new System.Drawing.Point(407, 414);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(113, 38);
@@ -143,6 +143,7 @@ namespace GUI_QuanLyGiay.SanPham
             // 
             // cbbKhuyenMai
             // 
+            this.cbbKhuyenMai.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbKhuyenMai.FormattingEnabled = true;
             this.cbbKhuyenMai.Location = new System.Drawing.Point(512, 168);
             this.cbbKhuyenMai.Name = "cbbKhuyenMai";
@@ -151,6 +152,7 @@ namespace GUI_QuanLyGiay.SanPham
             // 
             // cbbThuongHieu
             // 
+            this.cbbThuongHieu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbThuongHieu.FormattingEnabled = true;
             this.cbbThuongHieu.Location = new System.Drawing.Point(512, 118);
             this.cbbThuongHieu.Name = "cbbThuongHieu";
@@ -159,6 +161,7 @@ namespace GUI_QuanLyGiay.SanPham
             // 
             // cbbGioiTinh
             // 
+            this.cbbGioiTinh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbGioiTinh.FormattingEnabled = true;
             this.cbbGioiTinh.Location = new System.Drawing.Point(512, 67);
             this.cbbGioiTinh.Name = "cbbGioiTinh";
@@ -333,6 +336,9 @@ namespace GUI_QuanLyGiay.SanPham
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tool_SuaGiay";
             this.Load += new System.EventHandler(this.Tool_SuaGiay_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Tool_SuaGiay_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Tool_SuaGiay_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Tool_SuaGiay_MouseUp);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbHinh)).EndInit();

@@ -18,7 +18,7 @@ namespace GUI_QuanLyGiay.SanPham
         public BUS_GioiTinh busGioiTinh = new BUS_GioiTinh();
         public BUS_ThuongHieu busThuongHieu = new BUS_ThuongHieu();
         public BUS_KhuyenMai busKhuyenMai = new BUS_KhuyenMai();
-      //  int mov, movX, movY;
+        int mov, movX, movY;
         public DTO_Giay dtoGiay { get; set; }
         public DTO_GioiTinh dtoGioiTinh { get; set; }
         public DTO_ThuongHieu dtoThuongHieu { get; set; }
@@ -183,6 +183,26 @@ namespace GUI_QuanLyGiay.SanPham
                 ex.ToString();
                 MessageBox.Show("Định dạng không đúng!");
             }
+        }
+
+        private void Tool_SuaGiay_MouseDown(object sender, MouseEventArgs e)
+        {
+            mov = 1;
+            movX = e.X;
+            movY = e.Y;
+        }
+
+        private void Tool_SuaGiay_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (mov == 1)
+            {
+                this.SetDesktopLocation(MousePosition.X - movX, MousePosition.Y - movY);
+            }
+        }
+
+        private void Tool_SuaGiay_MouseUp(object sender, MouseEventArgs e)
+        {
+            mov = 0;
         }
     }
 }

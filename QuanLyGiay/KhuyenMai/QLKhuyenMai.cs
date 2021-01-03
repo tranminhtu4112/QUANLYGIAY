@@ -12,13 +12,13 @@ namespace GUI_QuanLyGiay.KhuyenMai
 {
     public partial class QLKhuyenMai : UserControl
     {
-      //  BUS_KhuyenMai busKhuyenMai = new BUS_KhuyenMai();
+        BUS_KhuyenMai busKhuyenMai = new BUS_KhuyenMai();
         public QLKhuyenMai()
         {
             InitializeComponent();
-         //   loadDataKhuyenMai();
+            loadDataKhuyenMai();
         }
-       /* public void loadDataKhuyenMai()
+        public void loadDataKhuyenMai()
         {
             lvwKhuyenMai.Clear();
             lvwKhuyenMai.Columns.Add("STT", 100);
@@ -37,20 +37,19 @@ namespace GUI_QuanLyGiay.KhuyenMai
                 item.SubItems.Add(row[3].ToString());
                 lvwKhuyenMai.Items.Add(item);
             }
-        }*/
-
+        }
         private void btnThem_Click(object sender, EventArgs e)
         {
-            /*Tool_ThemKhuyenMai toolThemKhuyenMai = new Tool_ThemKhuyenMai();
+            Tool_ThemKhuyenMai toolThemKhuyenMai = new Tool_ThemKhuyenMai();
             toolThemKhuyenMai.ShowDialog();
             if (toolThemKhuyenMai.isClickThem)
             {
                 loadDataKhuyenMai();
-            }*/
+            }
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
-        {/*
+        {
             if (lvwKhuyenMai.SelectedItems.Count > 0)
             {
                 TBXoa tbXoa = new TBXoa();
@@ -70,11 +69,11 @@ namespace GUI_QuanLyGiay.KhuyenMai
                         MessageBox.Show("Lỗi phần mềm!");
                     }
                 }
-            }*/
+            }
         }
         private void btnSua_Click(object sender, EventArgs e)
         {
-           /* if (lvwKhuyenMai.SelectedItems.Count > 0)
+            if (lvwKhuyenMai.SelectedItems.Count > 0)
             {
                 ListViewItem item = lvwKhuyenMai.SelectedItems[0];
                 DTO_KhuyenMai dtoKhuyenMai = new DTO_KhuyenMai();
@@ -88,7 +87,7 @@ namespace GUI_QuanLyGiay.KhuyenMai
                 {
                     loadDataKhuyenMai();
                 }
-            }*/
+            }
         }
     }
 }
