@@ -1,7 +1,6 @@
 ﻿using BUS_QuanLyGiay;
 using DTO_QuayLyGiay;
 using GUI_QuanLyGiay.SanPham;
-using GUI_QuanLyGiay.ThuongHieu;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,23 +10,45 @@ using System.IO;
 using System.Text;
 using System.Windows.Forms;
 
-namespace GUI_QuanLyGiay
+namespace GUI_QuanLyGiay.HoaDon
 {
-    public partial class QLSanPham : UserControl
+    public partial class Tool_ChonSanPham : Form
     {
+        public String maHoaDon { get; set; }
         BUS_Giay busGiay = new BUS_Giay();
         BUS_ThuongHieu busThuongHieu = new BUS_ThuongHieu();
-        public QLSanPham()
+        public bool isClickThoat { get; set; }
+        public Tool_ChonSanPham()
         {
             InitializeComponent();
             loadDataGiay();
             loadDataSapXepCombobox();
             loadDataLocThuongHieuCombobox();
-    }
+            this.isClickThoat = false;
+        }
+        public Tool_ChonSanPham(String maHoaDon)
+        {
+            InitializeComponent();
+            loadDataGiay();
+            loadDataSapXepCombobox();
+            loadDataLocThuongHieuCombobox();
+            this.maHoaDon = maHoaDon;
+            this.isClickThoat = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
         public void loadDataGiay()
         {
             lvwGiay.Clear();
-            lvwGiay.Columns.Add("Hình ảnh", 110);
+            lvwGiay.Columns.Add("Hình ảnh", 80);
             lvwGiay.Columns.Add("STT", 50);
             lvwGiay.Columns.Add("Mã", 70);
             lvwGiay.Columns.Add("Tên", 100);
@@ -41,7 +62,7 @@ namespace GUI_QuanLyGiay
             lvwGiay.FullRowSelect = true;
             lvwGiay.View = View.Details;
             ImageList imgList = new ImageList();
-            imgList.ImageSize = new Size(110, 110);
+            imgList.ImageSize = new Size(80, 80);
 
             int stt = 0;
             foreach (DataRow row in busGiay.getViewDetailGiay().Rows)
@@ -97,71 +118,11 @@ namespace GUI_QuanLyGiay
             cbbLocThuongHieu.DataSource = thuongHieus;
             cbbLocThuongHieu.DisplayMember = "tenThuongHieu";
         }
-        private void btnThem_Click(object sender, EventArgs e)
-        {
-            Tool_ThemGiay toolThemGiay = new Tool_ThemGiay();
-            toolThemGiay.ShowDialog();
-            if (toolThemGiay.isClickThem)
-            {
-                loadDataGiay();
-            }
-            
-        }
-        private void btnSua_Click(object sender, EventArgs e)
-        {
-            if (lvwGiay.SelectedItems.Count > 0)
-            {
-                ListViewItem item = lvwGiay.SelectedItems[0];
-                DTO_Giay dtoGiay = new DTO_Giay();
-                dtoGiay.maGiay = item.SubItems[2].Text;
-                dtoGiay.TenGiay = item.SubItems[3].Text;
-                dtoGiay.moTa = item.SubItems[6].Text;
-                dtoGiay.soLuong = int.Parse(item.SubItems[8].Text);
-                dtoGiay.gia = float.Parse(item.SubItems[9].Text);
-
-                DTO_GioiTinh dtoGioiTinh = new DTO_GioiTinh();
-                DTO_ThuongHieu dtoThuongHieu = new DTO_ThuongHieu();
-                DTO_KhuyenMai dtoKhuyenMai = new DTO_KhuyenMai();
-                dtoGioiTinh.tenGioiTinh = item.SubItems[4].Text;
-                dtoThuongHieu.tenThuongHieu = item.SubItems[5].Text;
-                dtoKhuyenMai.phanTramGiamGia = float.Parse(item.SubItems[7].Text); 
-
-                Tool_SuaGiay toolSuaGiayy = new Tool_SuaGiay(dtoGiay, dtoGioiTinh, dtoThuongHieu, dtoKhuyenMai);
-                toolSuaGiayy.ShowDialog();
-                if (toolSuaGiayy.isClickSua)
-                {
-                    loadDataGiay();
-                }
-            }
-        }
-        private void btnXoa_Click(object sender, EventArgs e)
-        {
-            if (lvwGiay.SelectedItems.Count > 0)
-            {
-                TBXoa tbXoa = new TBXoa();
-                tbXoa.ShowDialog();
-                if (tbXoa.isClickXoa)
-                {
-                    ListViewItem item = lvwGiay.SelectedItems[0];
-                    if (busGiay.deleteGiay(item.SubItems[2].Text))
-                    {
-                        String thongBao = "Xóa thành công!";
-                        TBThemSuaXoa tBThemSuaXoa = new TBThemSuaXoa(thongBao);
-                        tBThemSuaXoa.ShowDialog();
-                        loadDataGiay();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Lỗi phần mềm!");
-                    }
-                }
-            }
-        }
-        private void cbbSapXep_SelectedIndexChanged(object sender, EventArgs e)
+         private void cbbSapXep_SelectedIndexChanged(object sender, EventArgs e)
         {
             string value = ((KeyValuePair<string, string>)cbbSapXep.SelectedItem).Key;
             lvwGiay.Clear();
-            lvwGiay.Columns.Add("Hình ảnh", 110);
+            lvwGiay.Columns.Add("Hình ảnh", 80);
             lvwGiay.Columns.Add("STT", 50);
             lvwGiay.Columns.Add("Mã", 70);
             lvwGiay.Columns.Add("Tên", 100);
@@ -175,7 +136,7 @@ namespace GUI_QuanLyGiay
             lvwGiay.FullRowSelect = true;
             lvwGiay.View = View.Details;
             ImageList imgList = new ImageList();
-            imgList.ImageSize = new Size(110, 110);
+            imgList.ImageSize = new Size(80, 80);
 
             int stt = 0;
             foreach (DataRow row in busGiay.getSapXepTheo(value).Rows)
@@ -208,7 +169,7 @@ namespace GUI_QuanLyGiay
                 searchBy = "'" + searchBy + "'";
             }
             lvwGiay.Clear();
-            lvwGiay.Columns.Add("Hình ảnh", 110);
+            lvwGiay.Columns.Add("Hình ảnh", 80);
             lvwGiay.Columns.Add("STT", 50);
             lvwGiay.Columns.Add("Mã", 70);
             lvwGiay.Columns.Add("Tên", 100);
@@ -222,7 +183,7 @@ namespace GUI_QuanLyGiay
             lvwGiay.FullRowSelect = true;
             lvwGiay.View = View.Details;
             ImageList imgList = new ImageList();
-            imgList.ImageSize = new Size(110, 110);
+            imgList.ImageSize = new Size(80, 80);
 
             int stt = 0;
             foreach (DataRow row in busThuongHieu.getThuongHieuSearch(searchBy).Rows)
@@ -247,11 +208,24 @@ namespace GUI_QuanLyGiay
                 lvwGiay.Items.Add(item);
             }
         }
-        private void btnLamMoi_Click(object sender, EventArgs e)
+
+        private void btnThem_Click(object sender, EventArgs e)
         {
-            loadDataGiay();
-            loadDataSapXepCombobox();
-            loadDataLocThuongHieuCombobox();
+            if (lvwGiay.SelectedItems.Count > 0)
+            {
+                ListViewItem item = lvwGiay.SelectedItems[0];
+                String maGiay = item.SubItems[2].Text;
+                int soLuong = int.Parse(item.SubItems[8].Text);
+                float gia = float.Parse(item.SubItems[9].Text);
+                float phanTramGiamGia = float.Parse(item.SubItems[7].Text);
+
+                Tool_NhapSoLuong toolNhapSoLuong = new Tool_NhapSoLuong(maGiay, soLuong, this.maHoaDon, phanTramGiamGia, gia);
+                toolNhapSoLuong.ShowDialog();
+                if(toolNhapSoLuong.isClickThem)
+                {
+                    loadDataGiay();
+                }
+            }
         }
     }
 }

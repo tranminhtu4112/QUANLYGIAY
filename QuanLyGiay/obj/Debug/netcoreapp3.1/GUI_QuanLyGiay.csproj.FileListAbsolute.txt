@@ -48,3 +48,6 @@ C:\Users\Tuan\source\repos\QuanLyGiay\QuanLyGiay\obj\Debug\netcoreapp3.1\GUI_Qua
 C:\Users\Tuan\source\repos\QuanLyGiay\QuanLyGiay\obj\Debug\netcoreapp3.1\GUI_QuanLyGiay.KhuyenMai.Tool_SuaKhuyenMai.resources
 C:\Users\Tuan\source\repos\QuanLyGiay\QuanLyGiay\obj\Debug\netcoreapp3.1\GUI_QuanLyGiay.SanPham.Tool_ThemGiay.resources
 C:\Users\Tuan\source\repos\QuanLyGiay\QuanLyGiay\obj\Debug\netcoreapp3.1\GUI_QuanLyGiay.SanPham.Tool_SuaGiay.resources
+C:\Users\Tuan\source\repos\QuanLyGiay\QuanLyGiay\obj\Debug\netcoreapp3.1\GUI_QuanLyGiay.HoaDon.Tool_ThemHoaDon.resources
+C:\Users\Tuan\source\repos\QuanLyGiay\QuanLyGiay\obj\Debug\netcoreapp3.1\GUI_QuanLyGiay.HoaDon.Tool_ChonSanPham.resources
+C:\Users\Tuan\source\repos\QuanLyGiay\QuanLyGiay\obj\Debug\netcoreapp3.1\GUI_QuanLyGiay.HoaDon.Tool_NhapSoLuong.resources

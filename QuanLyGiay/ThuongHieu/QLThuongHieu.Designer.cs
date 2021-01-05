@@ -34,7 +34,6 @@ namespace GUI_QuanLyGiay
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.lvwThuongHieu = new System.Windows.Forms.ListView();
-            this.btnLamMoi = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -103,16 +102,6 @@ namespace GUI_QuanLyGiay
             this.lvwThuongHieu.TabIndex = 5;
             this.lvwThuongHieu.UseCompatibleStateImageBehavior = false;
             // 
-            // btnLamMoi
-            // 
-            this.btnLamMoi.Location = new System.Drawing.Point(60, 53);
-            this.btnLamMoi.Name = "btnLamMoi";
-            this.btnLamMoi.Size = new System.Drawing.Size(109, 40);
-            this.btnLamMoi.TabIndex = 6;
-            this.btnLamMoi.Text = "Làm mới";
-            this.btnLamMoi.UseVisualStyleBackColor = true;
-            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -128,7 +117,6 @@ namespace GUI_QuanLyGiay
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnLamMoi);
             this.Controls.Add(this.lvwThuongHieu);
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnXoa);
@@ -147,7 +135,6 @@ namespace GUI_QuanLyGiay
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.ListView lvwThuongHieu;
-        private System.Windows.Forms.Button btnLamMoi;
         private System.Windows.Forms.Label label1;
     }
 }

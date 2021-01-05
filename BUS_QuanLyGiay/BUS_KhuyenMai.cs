@@ -9,6 +9,7 @@ namespace BUS_QuanLyGiay
 {
     public class BUS_KhuyenMai
     {
+        private DAL_Common dalCommon = new DAL_Common();
         private DAL_KhuyenMai dalKhuyenMai = new DAL_KhuyenMai();
         public DataTable getAllKhuyenMai()
         {
@@ -25,6 +26,13 @@ namespace BUS_QuanLyGiay
         public bool deleteKhuyenMai(String maKhuyenMai)
         {
             return dalKhuyenMai.deleteKhuyenMai(maKhuyenMai);
+        }
+        public float GetPhanTramGiamGiaTheoMaGiay(String maGiay)
+        {
+            String SQLSelect = "SELECT GIAY.MAKHUYENMAI FROM GIAY WHERE GIAY.MAGIAY = " + maGiay;
+            DataTable maKhuyenMai = dalCommon.getSelect(SQLSelect);
+
+            return dalKhuyenMai.GetPhanTramGiamGia(maKhuyenMai.Rows[0][0].ToString());
         }
     }
 }

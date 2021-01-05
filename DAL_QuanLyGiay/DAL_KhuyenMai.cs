@@ -82,5 +82,14 @@ namespace DAL_QuanLyGiay
                 return false;
             }
         }
+        public float GetPhanTramGiamGia(String maKhuyenMai)
+        {
+            String SQLSelect = "SELECT KHUYENMAI.PHANTRAMGIAMGIA " +
+                                "FROM KHUYENMAI WHERE KHUYENMAI.MAKHUYENMAI = " + maKhuyenMai;
+
+            DataTable tablePhamTramGiamGia = dalCommon.getSelect(SQLSelect);
+
+            return float.Parse(tablePhamTramGiamGia.Rows[0][0].ToString());
+        }
     }
 }

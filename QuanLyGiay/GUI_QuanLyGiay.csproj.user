@@ -25,6 +25,15 @@
     <Compile Update="HoaDon\QLHoaDon.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="HoaDon\Tool_ChonSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="HoaDon\Tool_NhapSoLuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="HoaDon\Tool_ThemHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="KhuyenMai\QLKhuyenMai.cs">
       <SubType>UserControl</SubType>
     </Compile>

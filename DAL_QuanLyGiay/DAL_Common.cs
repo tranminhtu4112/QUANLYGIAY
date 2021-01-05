@@ -27,5 +27,22 @@ namespace DAL_QuanLyGiay
                 return null;
             }
         }
+        public bool thucThiSql(String sql)
+        {
+            try
+            {
+                conn = new DBConnection().getConnection();
+                conn.Open();
+                SqlCommand sqlCommand = new SqlCommand(sql, conn);
+                sqlCommand.ExecuteNonQuery();
+                conn.Close();
+                return true;
+            }
+            catch (Exception e)
+            {
+                e.ToString();
+                return false;
+            }
+        }
     }
 }

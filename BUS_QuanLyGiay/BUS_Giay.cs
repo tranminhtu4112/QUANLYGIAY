@@ -10,6 +10,7 @@ namespace BUS_QuanLyGiay
     public class BUS_Giay
     {
         private DAL_Giay dalGiay = new DAL_Giay();
+        private DAL_Common dalCommon = new DAL_Common();
         public DataTable getAllGiay()
         {
             return dalGiay.getAllGiay();
@@ -33,6 +34,12 @@ namespace BUS_QuanLyGiay
         public DataTable getSapXepTheo(String StringOrderBy)
         {
             return dalGiay.getSapXepTheo(StringOrderBy);
+        }
+        public bool UpdateSoLuong(String maGiay, int soLuong)
+        {
+            String mg = "'" + maGiay + "'";
+            String SQLUpdate = "UPDATE GIAY SET SOLUONG = " + soLuong + " WHERE MAGIAY = " + mg;
+            return dalCommon.thucThiSql(SQLUpdate);
         }
     }
 }
