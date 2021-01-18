@@ -35,14 +35,18 @@ namespace GUI_QuanLyGiay.KhuyenMai
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lvwKhuyenMai
             // 
+            this.lvwKhuyenMai.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(255)))));
             this.lvwKhuyenMai.HideSelection = false;
-            this.lvwKhuyenMai.Location = new System.Drawing.Point(60, 123);
+            this.lvwKhuyenMai.Location = new System.Drawing.Point(60, 132);
             this.lvwKhuyenMai.Name = "lvwKhuyenMai";
-            this.lvwKhuyenMai.Size = new System.Drawing.Size(728, 432);
+            this.lvwKhuyenMai.Size = new System.Drawing.Size(478, 432);
             this.lvwKhuyenMai.TabIndex = 14;
             this.lvwKhuyenMai.UseCompatibleStateImageBehavior = false;
             // 
@@ -56,7 +60,7 @@ namespace GUI_QuanLyGiay.KhuyenMai
             this.btnSua.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnSua.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.Image")));
             this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSua.Location = new System.Drawing.Point(807, 291);
+            this.btnSua.Location = new System.Drawing.Point(413, 76);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(125, 41);
             this.btnSua.TabIndex = 11;
@@ -75,7 +79,7 @@ namespace GUI_QuanLyGiay.KhuyenMai
             this.btnXoa.ForeColor = System.Drawing.Color.White;
             this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
             this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.Location = new System.Drawing.Point(807, 219);
+            this.btnXoa.Location = new System.Drawing.Point(233, 76);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(125, 41);
             this.btnXoa.TabIndex = 12;
@@ -94,7 +98,7 @@ namespace GUI_QuanLyGiay.KhuyenMai
             this.btnThem.ForeColor = System.Drawing.Color.White;
             this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
             this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.Location = new System.Drawing.Point(807, 151);
+            this.btnThem.Location = new System.Drawing.Point(60, 76);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(125, 41);
             this.btnThem.TabIndex = 13;
@@ -112,17 +116,36 @@ namespace GUI_QuanLyGiay.KhuyenMai
             this.label2.TabIndex = 16;
             this.label2.Text = "Quản lý khuyến mãi";
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(707, 180);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 23);
+            this.dateTimePicker1.TabIndex = 17;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(557, 132);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(377, 432);
+            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.TabStop = false;
+            // 
             // QLKhuyenMai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lvwKhuyenMai);
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnThem);
             this.Name = "QLKhuyenMai";
-            this.Size = new System.Drawing.Size(953, 603);
+            this.Size = new System.Drawing.Size(953, 613);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -134,5 +157,7 @@ namespace GUI_QuanLyGiay.KhuyenMai
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

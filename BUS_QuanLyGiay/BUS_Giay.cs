@@ -41,5 +41,12 @@ namespace BUS_QuanLyGiay
             String SQLUpdate = "UPDATE GIAY SET SOLUONG = " + soLuong + " WHERE MAGIAY = " + mg;
             return dalCommon.thucThiSql(SQLUpdate);
         }
+        public DataTable getViewTrangChu()
+        {
+            String SQLSelect = "SELECT GIAY.MAGIAY, GIAY.TENGIAY, GIAY.HINHANH, GIAY.GIA - (KHUYENMAI.PHANTRAMGIAMGIA / 100 *  GIAY.GIA) " +
+                               "FROM GIAY, KHUYENMAI " +
+                                "WHERE GIAY.MAKHUYENMAI = KHUYENMAI.MAKHUYENMAI";
+            return dalCommon.getSelect(SQLSelect);
+        }
     }
 }

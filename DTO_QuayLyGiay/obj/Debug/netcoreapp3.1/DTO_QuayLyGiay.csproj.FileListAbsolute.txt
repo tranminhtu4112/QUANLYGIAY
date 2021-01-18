@@ -6,4 +6,3 @@ C:\Users\Tuan\source\repos\QuanLyGiay\DTO_QuayLyGiay\obj\Debug\netcoreapp3.1\DTO
 C:\Users\Tuan\source\repos\QuanLyGiay\DTO_QuayLyGiay\obj\Debug\netcoreapp3.1\DTO_QuayLyGiay.csproj.CoreCompileInputs.cache
 C:\Users\Tuan\source\repos\QuanLyGiay\DTO_QuayLyGiay\obj\Debug\netcoreapp3.1\DTO_QuayLyGiay.dll
 C:\Users\Tuan\source\repos\QuanLyGiay\DTO_QuayLyGiay\obj\Debug\netcoreapp3.1\DTO_QuayLyGiay.pdb
-C:\Users\Tuan\source\repos\QuanLyGiay\DTO_QuayLyGiay\obj\Debug\netcoreapp3.1\DTO_QuayLyGiay.csprojAssemblyReference.cache

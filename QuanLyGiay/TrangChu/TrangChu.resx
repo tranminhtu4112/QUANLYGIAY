@@ -57,4 +57,18 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing.Common" name="System.Drawing.Common, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
+  <data name="btnLamMoi.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAOtJREFUSEvt
+        lc0NgkAQhenADoyxAkrj5lGPHpTYkViIUbvQE75PZmPioO66ejDhS95h/t4AgaUYSKZt21LaSWcpFnqZ
+        Kc2mHxqki3SQNtIyUvQeJWafL1GRq8B8ZKlomJFY0ljKoyK3urYwGc3WeFjoUREWFibDLAYWeiiK3y34
+        BPmNpT3GPcytLQ8Z9S3x5kpW0sTCJJiTeAPBP2aSXe3WlLOksvCOksE8cJKmVs5DRo/mge8tCXS+//wd
+        qMZRUVuYDLN4WOhRsZFyD7utpTwqhuOaxpU0ixS9749roEHiTlJ/OMy8Nh/wFMUVJe4THUxtH+UAAAAA
+        SUVORK5CYII=
+</value>
+  </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>41</value>
+  </metadata>
 </root>

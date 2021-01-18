@@ -57,4 +57,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing.Common" name="System.Drawing.Common, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
+  <data name="btnThongKe.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAQFJREFUSEvt
+        kU0SwUAQhXMA7Cj3cAkOQhUnkjtZsbCPEygHGG96von8IokqC76qV+Z1T/dLIvktHGC7wezHYO0D6h+D
+        tWXo9fsEgvH2efrfCVB55oVtxIYFtg79/IKOW8kWSyeUh1DfYrsF6GcXXL44YiEo1nfV+Ubox4DiAk8x
+        qHq2twr2zQCPjlPpKJ2lecFHrM717gEeWfsc2OjjG5T+dHkDW4d++wXQlVJoxIYFtg79lwFtMP404BKu
+        DCJjXR01V9KQkExasu59NJTauHNraROOLqU9DC0aSVfpJo0rfsK1/mhJfOI9peIbbSj1R0sOYZdbUPK1
+        RSi5A6U/fUmSO5U76Z0kVvDxAAAAAElFTkSuQmCC
+</value>
+  </data>
 </root>

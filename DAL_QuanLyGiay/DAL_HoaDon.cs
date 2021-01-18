@@ -54,5 +54,28 @@ namespace DAL_QuanLyGiay
                 return false;
             }
         }
+        public bool updateHoaDon(DTO_HoaDon dtoHoaDon)
+        {
+            String SQLUpdate = "UPDATE HOADON SET MANHANVIEN = @MANHANVIEN, TENKHACHHANG = @TENKHACHHANG, " +
+                "GIA = @GIA WHERE MAHOADON = @MAHOADON";
+            try
+            {
+                conn = new DBConnection().getConnection();
+                conn.Open();
+                SqlCommand sqlCommand = new SqlCommand(SQLUpdate, conn);
+                sqlCommand.Parameters.AddWithValue("MANHANVIEN", dtoHoaDon.maNhanVien);
+                sqlCommand.Parameters.AddWithValue("TENKHACHHANG", dtoHoaDon.tenKhachHang);
+                sqlCommand.Parameters.AddWithValue("GIA", dtoHoaDon.gia);
+                sqlCommand.Parameters.AddWithValue("MAHOADON", dtoHoaDon.maHoaDon);
+                sqlCommand.ExecuteNonQuery();
+                conn.Close();
+                return true;
+            }
+            catch (Exception e)
+            {
+                e.ToString();
+                return false;
+            }
+        }
     }
 }

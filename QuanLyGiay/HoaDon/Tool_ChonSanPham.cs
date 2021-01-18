@@ -14,6 +14,7 @@ namespace GUI_QuanLyGiay.HoaDon
 {
     public partial class Tool_ChonSanPham : Form
     {
+        int mov, movX, movY;
         public String maHoaDon { get; set; }
         BUS_Giay busGiay = new BUS_Giay();
         BUS_ThuongHieu busThuongHieu = new BUS_ThuongHieu();
@@ -226,6 +227,26 @@ namespace GUI_QuanLyGiay.HoaDon
                     loadDataGiay();
                 }
             }
+        }
+
+        private void Tool_ChonSanPham_MouseDown(object sender, MouseEventArgs e)
+        {
+            mov = 1;
+            movX = e.X;
+            movY = e.Y;
+        }
+
+        private void Tool_ChonSanPham_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (mov == 1)
+            {
+                this.SetDesktopLocation(MousePosition.X - movX, MousePosition.Y - movY);
+            }
+        }
+
+        private void Tool_ChonSanPham_MouseUp(object sender, MouseEventArgs e)
+        {
+            mov = 0;
         }
     }
 }

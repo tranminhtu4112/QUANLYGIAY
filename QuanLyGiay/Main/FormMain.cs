@@ -107,18 +107,10 @@ namespace QuanLyGiay
             SidePanel.Top = btnThongKe.Top;
             qlThongKe1.BringToFront();
         }
-
-        private void btnDuTru_Click(object sender, EventArgs e)
-        {
-            SidePanel.Height = btnDuTru.Height;
-            SidePanel.Top = btnDuTru.Top;
-            duTru1.BringToFront();
-        }
-
         private void FormMain_Load(object sender, EventArgs e)
         {
-      /*      String[] name = this.dtoDangNhap.tenNhanVien.ToString().Split(" ");
-            txbChaoNhanVien.Text = name[name.Length - 1].ToString();*/
+            String[] name = this.dtoDangNhap.tenNhanVien.ToString().Split(" ");
+            txbChaoNhanVien.Text = name[name.Length - 1].ToString();
         }
 
         private void btnDangXuat_Click(object sender, EventArgs e)
@@ -127,6 +119,11 @@ namespace QuanLyGiay
             this.Close();
             DangNhap dangNhap = new DangNhap();
             dangNhap.Show();
+        }
+
+        private void qlKhuyenMai1_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void panel2_MouseMove(object sender, MouseEventArgs e)

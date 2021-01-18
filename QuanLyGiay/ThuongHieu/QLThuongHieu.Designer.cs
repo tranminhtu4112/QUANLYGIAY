@@ -95,6 +95,7 @@ namespace GUI_QuanLyGiay
             // 
             // lvwThuongHieu
             // 
+            this.lvwThuongHieu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(219)))), ((int)(((byte)(240)))));
             this.lvwThuongHieu.HideSelection = false;
             this.lvwThuongHieu.Location = new System.Drawing.Point(60, 123);
             this.lvwThuongHieu.Name = "lvwThuongHieu";
@@ -116,6 +117,7 @@ namespace GUI_QuanLyGiay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(219)))), ((int)(((byte)(240)))));
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lvwThuongHieu);
             this.Controls.Add(this.btnSua);
@@ -123,7 +125,7 @@ namespace GUI_QuanLyGiay
             this.Controls.Add(this.btnThem);
             this.Location = new System.Drawing.Point(244, 70);
             this.Name = "QLThuongHieu";
-            this.Size = new System.Drawing.Size(953, 603);
+            this.Size = new System.Drawing.Size(953, 613);
             this.ResumeLayout(false);
             this.PerformLayout();
 

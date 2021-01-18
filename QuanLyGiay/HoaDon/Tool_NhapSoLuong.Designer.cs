@@ -38,7 +38,9 @@ namespace GUI_QuanLyGiay.HoaDon
             this.label2 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
+            this.txbMaGiay = new System.Windows.Forms.TextBox();
             this.txbSoLuong = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -75,7 +77,9 @@ namespace GUI_QuanLyGiay.HoaDon
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.btnLuu);
+            this.panel1.Controls.Add(this.txbMaGiay);
             this.panel1.Controls.Add(this.txbSoLuong);
+            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(4, 36);
             this.panel1.Name = "panel1";
@@ -85,7 +89,7 @@ namespace GUI_QuanLyGiay.HoaDon
             // lblSoLuongToiDa
             // 
             this.lblSoLuongToiDa.AutoSize = true;
-            this.lblSoLuongToiDa.Location = new System.Drawing.Point(314, 52);
+            this.lblSoLuongToiDa.Location = new System.Drawing.Point(317, 78);
             this.lblSoLuongToiDa.Name = "lblSoLuongToiDa";
             this.lblSoLuongToiDa.Size = new System.Drawing.Size(13, 15);
             this.lblSoLuongToiDa.TabIndex = 23;
@@ -96,7 +100,7 @@ namespace GUI_QuanLyGiay.HoaDon
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(200, 76);
+            this.label3.Location = new System.Drawing.Point(352, 78);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(36, 16);
             this.label3.TabIndex = 22;
@@ -107,7 +111,7 @@ namespace GUI_QuanLyGiay.HoaDon
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(256, 51);
+            this.label2.Location = new System.Drawing.Point(259, 77);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 16);
             this.label2.TabIndex = 21;
@@ -149,20 +153,38 @@ namespace GUI_QuanLyGiay.HoaDon
             this.btnLuu.UseVisualStyleBackColor = false;
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
+            // txbMaGiay
+            // 
+            this.txbMaGiay.Location = new System.Drawing.Point(105, 30);
+            this.txbMaGiay.Name = "txbMaGiay";
+            this.txbMaGiay.ReadOnly = true;
+            this.txbMaGiay.Size = new System.Drawing.Size(132, 23);
+            this.txbMaGiay.TabIndex = 17;
+            // 
             // txbSoLuong
             // 
-            this.txbSoLuong.Location = new System.Drawing.Point(102, 49);
+            this.txbSoLuong.Location = new System.Drawing.Point(105, 75);
             this.txbSoLuong.Name = "txbSoLuong";
             this.txbSoLuong.Size = new System.Drawing.Size(132, 23);
             this.txbSoLuong.TabIndex = 17;
-            this.txbSoLuong.TextChanged += new System.EventHandler(this.txbSoLuong_TextChanged);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.White;
+            this.label4.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(23, 32);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(56, 16);
+            this.label4.TabIndex = 18;
+            this.label4.Text = "Mã giày";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(20, 51);
+            this.label1.Location = new System.Drawing.Point(23, 77);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(62, 16);
             this.label1.TabIndex = 18;
@@ -182,6 +204,9 @@ namespace GUI_QuanLyGiay.HoaDon
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tool_NhapSoLuong";
             this.Load += new System.EventHandler(this.Tool_NhapSoLuong_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Tool_NhapSoLuong_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Tool_NhapSoLuong_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Tool_NhapSoLuong_MouseUp);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -201,5 +226,7 @@ namespace GUI_QuanLyGiay.HoaDon
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnLuu;
+        private System.Windows.Forms.TextBox txbMaGiay;
+        private System.Windows.Forms.Label label4;
     }
 }

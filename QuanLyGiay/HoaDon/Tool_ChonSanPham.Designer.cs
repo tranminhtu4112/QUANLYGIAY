@@ -213,6 +213,9 @@ namespace GUI_QuanLyGiay.HoaDon
             this.Name = "Tool_ChonSanPham";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tool_ChonSanPham";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Tool_ChonSanPham_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Tool_ChonSanPham_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Tool_ChonSanPham_MouseUp);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

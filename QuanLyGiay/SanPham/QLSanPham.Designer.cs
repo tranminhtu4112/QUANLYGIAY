@@ -42,10 +42,13 @@ namespace GUI_QuanLyGiay
             this.cbbLocThuongHieu = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnLamMoi = new System.Windows.Forms.Button();
+            this.btnTimKiem = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lvwGiay
             // 
+            this.lvwGiay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(230)))), ((int)(((byte)(204)))));
             this.lvwGiay.HideSelection = false;
             this.lvwGiay.Location = new System.Drawing.Point(36, 168);
             this.lvwGiay.Name = "lvwGiay";
@@ -128,7 +131,7 @@ namespace GUI_QuanLyGiay
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(706, 63);
+            this.textBox1.Location = new System.Drawing.Point(706, 66);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(172, 23);
             this.textBox1.TabIndex = 2;
@@ -202,10 +205,37 @@ namespace GUI_QuanLyGiay
             this.btnLamMoi.UseVisualStyleBackColor = false;
             this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             // 
+            // btnTimKiem
+            // 
+            this.btnTimKiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(89)))), ((int)(((byte)(89)))));
+            this.btnTimKiem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTimKiem.FlatAppearance.BorderSize = 0;
+            this.btnTimKiem.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.btnTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTimKiem.Image = ((System.Drawing.Image)(resources.GetObject("btnTimKiem.Image")));
+            this.btnTimKiem.Location = new System.Drawing.Point(884, 66);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.Size = new System.Drawing.Size(28, 23);
+            this.btnTimKiem.TabIndex = 19;
+            this.btnTimKiem.UseVisualStyleBackColor = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(593, 69);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(103, 16);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Tên sản phẩm";
+            // 
             // QLSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(230)))), ((int)(((byte)(204)))));
+            this.Controls.Add(this.btnTimKiem);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -220,7 +250,7 @@ namespace GUI_QuanLyGiay
             this.Controls.Add(this.lvwGiay);
             this.Location = new System.Drawing.Point(244, 70);
             this.Name = "QLSanPham";
-            this.Size = new System.Drawing.Size(953, 603);
+            this.Size = new System.Drawing.Size(953, 613);
             this.Load += new System.EventHandler(this.QLSanPham_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -241,5 +271,7 @@ namespace GUI_QuanLyGiay
         private System.Windows.Forms.ComboBox cbbLocThuongHieu;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnLamMoi;
+        private System.Windows.Forms.Button btnTimKiem;
+        private System.Windows.Forms.Label label4;
     }
 }

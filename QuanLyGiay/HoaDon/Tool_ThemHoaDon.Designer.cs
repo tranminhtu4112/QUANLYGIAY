@@ -36,7 +36,7 @@ namespace GUI_QuanLyGiay.HoaDon
             this.lblTongCong = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnTaoHoaDon = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
@@ -54,7 +54,7 @@ namespace GUI_QuanLyGiay.HoaDon
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(272, 9);
+            this.label1.Location = new System.Drawing.Point(311, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(162, 18);
             this.label1.TabIndex = 5;
@@ -66,7 +66,7 @@ namespace GUI_QuanLyGiay.HoaDon
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.ForestGreen;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(681, -2);
+            this.button1.Location = new System.Drawing.Point(756, -1);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(42, 38);
             this.button1.TabIndex = 6;
@@ -79,7 +79,7 @@ namespace GUI_QuanLyGiay.HoaDon
             this.panel1.Controls.Add(this.lblTongCong);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.btnTaoHoaDon);
             this.panel1.Controls.Add(this.btnSua);
             this.panel1.Controls.Add(this.btnXoa);
             this.panel1.Controls.Add(this.btnThem);
@@ -89,9 +89,9 @@ namespace GUI_QuanLyGiay.HoaDon
             this.panel1.Controls.Add(this.txbTenKhachHang);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.txbMaHoaDon);
-            this.panel1.Location = new System.Drawing.Point(5, 36);
+            this.panel1.Location = new System.Drawing.Point(4, 36);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(714, 484);
+            this.panel1.Size = new System.Drawing.Size(790, 484);
             this.panel1.TabIndex = 7;
             // 
             // lblTongCong
@@ -126,7 +126,7 @@ namespace GUI_QuanLyGiay.HoaDon
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button2.Location = new System.Drawing.Point(512, 431);
+            this.button2.Location = new System.Drawing.Point(568, 429);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(85, 39);
             this.button2.TabIndex = 21;
@@ -134,21 +134,22 @@ namespace GUI_QuanLyGiay.HoaDon
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // btnTaoHoaDon
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(167)))), ((int)(((byte)(69)))));
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.ForestGreen;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(615, 431);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(82, 39);
-            this.button3.TabIndex = 20;
-            this.button3.Text = "Thêm";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnTaoHoaDon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(167)))), ((int)(((byte)(69)))));
+            this.btnTaoHoaDon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTaoHoaDon.FlatAppearance.BorderSize = 0;
+            this.btnTaoHoaDon.FlatAppearance.MouseOverBackColor = System.Drawing.Color.ForestGreen;
+            this.btnTaoHoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTaoHoaDon.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnTaoHoaDon.ForeColor = System.Drawing.Color.White;
+            this.btnTaoHoaDon.Location = new System.Drawing.Point(694, 429);
+            this.btnTaoHoaDon.Name = "btnTaoHoaDon";
+            this.btnTaoHoaDon.Size = new System.Drawing.Size(82, 39);
+            this.btnTaoHoaDon.TabIndex = 20;
+            this.btnTaoHoaDon.Text = "Thêm";
+            this.btnTaoHoaDon.UseVisualStyleBackColor = false;
+            this.btnTaoHoaDon.Click += new System.EventHandler(this.btnTaoHoaDon_Click);
             // 
             // btnSua
             // 
@@ -160,12 +161,13 @@ namespace GUI_QuanLyGiay.HoaDon
             this.btnSua.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnSua.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.Image")));
             this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSua.Location = new System.Drawing.Point(615, 279);
+            this.btnSua.Location = new System.Drawing.Point(694, 277);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(83, 39);
             this.btnSua.TabIndex = 17;
             this.btnSua.Text = "  Sửa";
             this.btnSua.UseVisualStyleBackColor = false;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnXoa
             // 
@@ -178,12 +180,13 @@ namespace GUI_QuanLyGiay.HoaDon
             this.btnXoa.ForeColor = System.Drawing.Color.White;
             this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
             this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.Location = new System.Drawing.Point(615, 218);
+            this.btnXoa.Location = new System.Drawing.Point(694, 216);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(83, 39);
             this.btnXoa.TabIndex = 18;
             this.btnXoa.Text = "  Xóa";
             this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnThem
             // 
@@ -196,7 +199,7 @@ namespace GUI_QuanLyGiay.HoaDon
             this.btnThem.ForeColor = System.Drawing.Color.White;
             this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
             this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.Location = new System.Drawing.Point(615, 161);
+            this.btnThem.Location = new System.Drawing.Point(694, 159);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(83, 39);
             this.btnThem.TabIndex = 19;
@@ -209,7 +212,7 @@ namespace GUI_QuanLyGiay.HoaDon
             this.lvwSanPhamMua.HideSelection = false;
             this.lvwSanPhamMua.Location = new System.Drawing.Point(22, 147);
             this.lvwSanPhamMua.Name = "lvwSanPhamMua";
-            this.lvwSanPhamMua.Size = new System.Drawing.Size(575, 261);
+            this.lvwSanPhamMua.Size = new System.Drawing.Size(663, 261);
             this.lvwSanPhamMua.TabIndex = 16;
             this.lvwSanPhamMua.UseCompatibleStateImageBehavior = false;
             // 
@@ -218,7 +221,7 @@ namespace GUI_QuanLyGiay.HoaDon
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.White;
             this.label4.Font = new System.Drawing.Font("Calisto MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(261, 114);
+            this.label4.Location = new System.Drawing.Point(301, 115);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(101, 17);
             this.label4.TabIndex = 15;
@@ -266,7 +269,7 @@ namespace GUI_QuanLyGiay.HoaDon
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(167)))), ((int)(((byte)(69)))));
-            this.ClientSize = new System.Drawing.Size(724, 529);
+            this.ClientSize = new System.Drawing.Size(799, 525);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
@@ -275,6 +278,9 @@ namespace GUI_QuanLyGiay.HoaDon
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tool_ThemHoaDon";
             this.Load += new System.EventHandler(this.Tool_ThemHoaDon_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Tool_ThemHoaDon_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Tool_ThemHoaDon_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Tool_ThemHoaDon_MouseUp);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -299,6 +305,6 @@ namespace GUI_QuanLyGiay.HoaDon
         private System.Windows.Forms.Label lblTongCong;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnTaoHoaDon;
     }
 }

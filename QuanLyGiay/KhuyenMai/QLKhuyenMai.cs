@@ -24,7 +24,7 @@ namespace GUI_QuanLyGiay.KhuyenMai
             lvwKhuyenMai.Columns.Add("STT", 100);
             lvwKhuyenMai.Columns.Add("Mã khuyến mãi", 100);
             lvwKhuyenMai.Columns.Add("Tên sự kiện", 100);
-            lvwKhuyenMai.Columns.Add("Phần trăm giảm giá", 100);
+            lvwKhuyenMai.Columns.Add("Giảm giá (%)", 100);
             lvwKhuyenMai.FullRowSelect = true;
             lvwKhuyenMai.View = View.Details;
             int stt = 0;

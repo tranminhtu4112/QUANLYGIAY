@@ -23,7 +23,7 @@ namespace GUI_QuanLyGiay
             loadDataGiay();
             loadDataSapXepCombobox();
             loadDataLocThuongHieuCombobox();
-    }
+        }
         public void loadDataGiay()
         {
             lvwGiay.Clear();
@@ -68,7 +68,7 @@ namespace GUI_QuanLyGiay
         }
         private void QLSanPham_Load(object sender, EventArgs e)
         {
-            textBox1.Text = "";
+           textBox1.Text = "";
         }
         public void loadDataSapXepCombobox()
         {
@@ -105,7 +105,6 @@ namespace GUI_QuanLyGiay
             {
                 loadDataGiay();
             }
-            
         }
         private void btnSua_Click(object sender, EventArgs e)
         {
@@ -124,7 +123,7 @@ namespace GUI_QuanLyGiay
                 DTO_KhuyenMai dtoKhuyenMai = new DTO_KhuyenMai();
                 dtoGioiTinh.tenGioiTinh = item.SubItems[4].Text;
                 dtoThuongHieu.tenThuongHieu = item.SubItems[5].Text;
-                dtoKhuyenMai.phanTramGiamGia = float.Parse(item.SubItems[7].Text); 
+                dtoKhuyenMai.phanTramGiamGia = float.Parse(item.SubItems[7].Text);
 
                 Tool_SuaGiay toolSuaGiayy = new Tool_SuaGiay(dtoGiay, dtoGioiTinh, dtoThuongHieu, dtoKhuyenMai);
                 toolSuaGiayy.ShowDialog();

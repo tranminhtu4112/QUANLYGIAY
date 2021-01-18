@@ -10,8 +10,20 @@
     <Compile Update="DonDatHang\QLDonDatHang.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="DuTru\DuTru.cs">
-      <SubType>UserControl</SubType>
+    <Compile Update="DonDatHang\Tool_CapNhapTrangThai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DonDatHang\Tool_ChonDatSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DonDatHang\Tool_NhapSoLuongDatHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DonDatHang\Tool_ThemDonDatHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DonDatHang\Tool_XemChiTietDonDatHang.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Update="GioiTinh\QLGioiTinh.cs">
       <SubType>UserControl</SubType>
@@ -32,6 +44,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="HoaDon\Tool_ThemHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="HoaDon\Tool_XemChiTiet.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="KhuyenMai\QLKhuyenMai.cs">
