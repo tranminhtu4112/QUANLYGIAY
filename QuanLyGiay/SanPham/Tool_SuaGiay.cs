@@ -82,6 +82,14 @@ namespace GUI_QuanLyGiay.SanPham
             cbbKhuyenMai.DataSource = khuyenMais;
             cbbKhuyenMai.DisplayMember = "tenSuKien";
         }
+        public void loadImage()
+        {
+            DataTable dtImg = busGiay.getGiayByMaGiay(txbMaGiay.Text);
+            MemoryStream memoryStream = new MemoryStream((Byte[])dtImg.Rows[0][6]);
+            Image img = Image.FromStream(memoryStream);
+            ptbHinh.SizeMode = PictureBoxSizeMode.StretchImage;
+            ptbHinh.Image = img;
+        }
         private void Tool_SuaGiay_Load(object sender, EventArgs e)
         {
             txbMaGiay.Text = this.dtoGiay.maGiay;
@@ -90,6 +98,7 @@ namespace GUI_QuanLyGiay.SanPham
             txbSoLuong.Text = this.dtoGiay.soLuong.ToString();
             txbGia.Text = this.dtoGiay.gia.ToString();
             LoadAllCombobox();
+            loadImage();
         }
         public Object checkAndReturnGiay()
         {

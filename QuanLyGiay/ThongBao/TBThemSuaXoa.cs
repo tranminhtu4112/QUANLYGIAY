@@ -35,7 +35,6 @@ namespace GUI_QuanLyGiay
             movX = e.X;
             movY = e.Y;
         }
-
         private void TBThem_MouseMove(object sender, MouseEventArgs e)
         {
             if (mov == 1)

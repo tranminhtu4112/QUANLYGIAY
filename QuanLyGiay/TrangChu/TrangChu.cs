@@ -47,16 +47,5 @@ namespace GUI_QuanLyGiay
         {
             loadDataGiay();
         }
-
-        private void lvwSanPhamTrangChu_Click(object sender, EventArgs e)
-        {
-            ListViewItem item = lvwSanPhamTrangChu.SelectedItems[0];
-            MessageBox.Show(item.SubItems[1].Text);
-        }
-
-        private void lvwSanPhamTrangChu_DrawItem(object sender, DrawListViewItemEventArgs e)
-        {
-            
-        }
     }
 }

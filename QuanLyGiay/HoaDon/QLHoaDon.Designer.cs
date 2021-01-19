@@ -65,6 +65,7 @@ namespace GUI_QuanLyGiay.HoaDon
             // 
             this.lvwHoaDon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(255)))), ((int)(((byte)(229)))));
             this.lvwHoaDon.HideSelection = false;
+            this.lvwHoaDon.HoverSelection = true;
             this.lvwHoaDon.Location = new System.Drawing.Point(50, 162);
             this.lvwHoaDon.Name = "lvwHoaDon";
             this.lvwHoaDon.Size = new System.Drawing.Size(718, 404);
@@ -250,7 +251,7 @@ namespace GUI_QuanLyGiay.HoaDon
             this.btnTimKiem.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.btnTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTimKiem.Image = ((System.Drawing.Image)(resources.GetObject("btnTimKiem.Image")));
-            this.btnTimKiem.Location = new System.Drawing.Point(736, 88);
+            this.btnTimKiem.Location = new System.Drawing.Point(736, 87);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(28, 23);
             this.btnTimKiem.TabIndex = 18;

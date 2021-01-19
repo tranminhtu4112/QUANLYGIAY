@@ -217,6 +217,7 @@ namespace GUI_QuanLyGiay.DonDatHang
             // 
             this.lvwDonDatHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(230)))), ((int)(((byte)(255)))));
             this.lvwDonDatHang.HideSelection = false;
+            this.lvwDonDatHang.HoverSelection = true;
             this.lvwDonDatHang.Location = new System.Drawing.Point(50, 162);
             this.lvwDonDatHang.Name = "lvwDonDatHang";
             this.lvwDonDatHang.Size = new System.Drawing.Size(718, 404);

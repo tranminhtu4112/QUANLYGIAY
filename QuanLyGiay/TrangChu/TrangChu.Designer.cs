@@ -73,15 +73,13 @@ namespace GUI_QuanLyGiay
             // 
             this.lvwSanPhamTrangChu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(242)))), ((int)(((byte)(255)))));
             this.lvwSanPhamTrangChu.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.lvwSanPhamTrangChu.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lvwSanPhamTrangChu.Font = new System.Drawing.Font("Lucida Fax", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lvwSanPhamTrangChu.HideSelection = false;
-            this.lvwSanPhamTrangChu.Location = new System.Drawing.Point(0, 79);
+            this.lvwSanPhamTrangChu.Location = new System.Drawing.Point(0, 74);
             this.lvwSanPhamTrangChu.Name = "lvwSanPhamTrangChu";
-            this.lvwSanPhamTrangChu.Size = new System.Drawing.Size(953, 496);
+            this.lvwSanPhamTrangChu.Size = new System.Drawing.Size(953, 514);
             this.lvwSanPhamTrangChu.TabIndex = 7;
             this.lvwSanPhamTrangChu.UseCompatibleStateImageBehavior = false;
-            this.lvwSanPhamTrangChu.DrawItem += new System.Windows.Forms.DrawListViewItemEventHandler(this.lvwSanPhamTrangChu_DrawItem);
-            this.lvwSanPhamTrangChu.Click += new System.EventHandler(this.lvwSanPhamTrangChu_Click);
             // 
             // label2
             // 

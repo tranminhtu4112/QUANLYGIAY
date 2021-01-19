@@ -57,15 +57,16 @@ namespace GUI_QuanLyGiay
             this.lblThongBao.BackColor = System.Drawing.Color.White;
             this.lblThongBao.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblThongBao.ForeColor = System.Drawing.Color.Black;
-            this.lblThongBao.Location = new System.Drawing.Point(95, 109);
+            this.lblThongBao.Location = new System.Drawing.Point(67, 123);
             this.lblThongBao.Name = "lblThongBao";
-            this.lblThongBao.Size = new System.Drawing.Size(0, 18);
+            this.lblThongBao.Size = new System.Drawing.Size(95, 18);
             this.lblThongBao.TabIndex = 5;
+            this.lblThongBao.Text = "Thông báo";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(142, -7);
+            this.pictureBox1.Location = new System.Drawing.Point(142, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(103, 113);
             this.pictureBox1.TabIndex = 4;

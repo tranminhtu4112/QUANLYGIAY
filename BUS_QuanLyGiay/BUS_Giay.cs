@@ -45,7 +45,12 @@ namespace BUS_QuanLyGiay
         {
             String SQLSelect = "SELECT GIAY.MAGIAY, GIAY.TENGIAY, GIAY.HINHANH, GIAY.GIA - (KHUYENMAI.PHANTRAMGIAMGIA / 100 *  GIAY.GIA) " +
                                "FROM GIAY, KHUYENMAI " +
-                                "WHERE GIAY.MAKHUYENMAI = KHUYENMAI.MAKHUYENMAI";
+                                "WHERE GIAY.MAKHUYENMAI = KHUYENMAI.MAKHUYENMAI AND KHUYENMAI.PHANTRAMGIAMGIA > 0";
+            return dalCommon.getSelect(SQLSelect);
+        }
+        public DataTable getGiayByMaGiay(String maGiay)
+        {
+            String SQLSelect = "SELECT * FROM GIAY WHERE MAGIAY = '" + maGiay + "'";
             return dalCommon.getSelect(SQLSelect);
         }
     }
